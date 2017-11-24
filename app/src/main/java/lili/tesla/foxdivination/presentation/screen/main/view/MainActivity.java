@@ -2,6 +2,7 @@ package lili.tesla.foxdivination.presentation.screen.main.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -16,6 +17,7 @@ public class MainActivity extends BaseActivity implements MainView{
 
     public static void start(Context context ) {
         Intent intent = new Intent(context, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         Bundle bundle = new Bundle();
         intent.putExtras(bundle);
         context.startActivity(intent);
@@ -27,6 +29,7 @@ public class MainActivity extends BaseActivity implements MainView{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         ButterKnife.bind(this);
         mPresenter = new MainPresenter();

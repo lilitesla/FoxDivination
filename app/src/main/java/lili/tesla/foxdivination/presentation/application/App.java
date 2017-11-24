@@ -5,6 +5,7 @@ import android.app.Application;
 import com.facebook.stetho.Stetho;
 
 import lili.tesla.foxdivination.BuildConfig;
+import lili.tesla.foxdivination.data.database.DataBaseAccess;
 
 /**
  * Created by Лилия on 24.11.2017.
@@ -13,7 +14,7 @@ import lili.tesla.foxdivination.BuildConfig;
 public class App extends Application {
 
     private static App instance;
-    //public static DataBaseAccess dataBaseAccess;
+    public static DataBaseAccess dataBaseAccess;
 
 
     @Override
@@ -24,7 +25,7 @@ public class App extends Application {
             stethoInit();
         }
 
-        //dataBaseAccess = new DataBaseAccess(this);
+        dataBaseAccess = new DataBaseAccess(this);
     }
 
     public static App getInstance() {

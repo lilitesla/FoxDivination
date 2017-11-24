@@ -3,8 +3,10 @@
 
     <color name="background_gray_blue">#eceff1</color>
     <color name="background_gray_blue_dark">#b0bec5</color>
+    <color name="blue_gray">#546E7A</color>
 
     <color name="brown_light">#795548</color>
+    <color name="brown_medium">#5d4037</color>
     <color name="brown_dark">#3e2723</color>
 
     <color name="green_light">#66bb6a</color>

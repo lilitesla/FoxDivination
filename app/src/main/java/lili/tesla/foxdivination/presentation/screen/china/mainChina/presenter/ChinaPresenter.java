@@ -9,4 +9,12 @@ import lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaVi
 
 public class ChinaPresenter extends BasePresenter<ChinaView> {
 
+    public void showMainScreen() {
+        mView.showMainScreen();
+    }
+
+    public void showFateBookScreen() {
+        mView.showFateBookScreen();
+    }
+
 }

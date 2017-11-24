@@ -17,7 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".presentation.screen.china.mainChina.view.ChinaActivity"></activity>
+        <activity android:name=".presentation.screen.china.mainChina.view.ChinaActivity" />
+        <activity android:name=".presentation.screen.china.fateBook.devination.view.FateBookDevinationActivity" />
+        <activity android:name=".presentation.screen.china.fateBook.main.view.FateBookMainActivity" />
+        <activity android:name=".presentation.screen.china.fateBook.result.view.FateBookResultActivity"></activity>
     </application>
 
 </manifest>

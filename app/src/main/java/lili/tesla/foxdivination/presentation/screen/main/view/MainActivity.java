@@ -11,6 +11,7 @@ import butterknife.OnClick;
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity;
+import lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.EkaterinaMainActivity;
 import lili.tesla.foxdivination.presentation.screen.main.presenter.MainPresenter;
 
 public class MainActivity extends BaseActivity implements MainView{
@@ -41,8 +42,16 @@ public class MainActivity extends BaseActivity implements MainView{
         mPresenter.showChinaScreen();
     }
 
+    @OnClick (R.id.main_button_ekaterina)
+    void onMainButtonEkaterinaClick() { mPresenter.showEkaterinaScreen(); }
+
     @Override
     public void showChinaScreen() {
         ChinaActivity.start(this);
+    }
+
+    @Override
+    public void showEkaterinaScreen() {
+        EkaterinaMainActivity.start(this);
     }
 }

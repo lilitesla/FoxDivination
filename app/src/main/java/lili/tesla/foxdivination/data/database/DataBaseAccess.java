@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Region;
 
+import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.data.Prediction;
 
 /**
@@ -68,6 +69,33 @@ public class DataBaseAccess {
                 cursor.getString(1), cursor.getString(2),
                 cursor.getString(3));
         cursor.close();
+        close();
+        return result;
+    }
+
+    // Ekaterina
+
+    public Ekaterina getEkaterinaPrediction (int[] nums) {
+        open();
+
+        String[] str = new String[1];
+
+        String[] captions = new String[3];
+        String[] descriptions = new String[3];
+
+        for (int i = 0; i < 3; i++) {
+            str[0] = nums[i] + "";
+
+            Cursor cursor = database.rawQuery("SELECT caption, description FROM ekaterina WHERE id = ?", str);
+            cursor.moveToFirst();
+
+            captions[i] = cursor.getString(0);
+            descriptions[i] = cursor.getString(1);
+
+            cursor.close();
+        }
+
+        Ekaterina result = new Ekaterina(captions[0], descriptions[0], captions[1], descriptions[1], captions[2], descriptions[2]);
         close();
         return result;
     }

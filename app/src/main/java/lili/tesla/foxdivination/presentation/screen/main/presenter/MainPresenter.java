@@ -13,5 +13,7 @@ public class MainPresenter extends BasePresenter<MainView> {
         mView.showChinaScreen();
     }
 
+    public void showEkaterinaScreen() { mView.showEkaterinaScreen(); }
+
 
 }

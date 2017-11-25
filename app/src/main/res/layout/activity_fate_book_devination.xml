@@ -152,11 +152,9 @@
 
         <Button
             android:id="@+id/button_fatebook_divination_show_result"
-            android:layout_width="match_parent"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
+            android:layout_width="250dp"
             android:layout_height="40dp"
-            android:text="@string/button_fate_book_show_results"
+            android:text="@string/button_show_results"
             android:textColor="@color/background_gray_blue"
             android:background="@color/brown_medium"
             android:layout_above="@+id/button_fatebook_divination_back"

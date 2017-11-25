@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/background_gray_blue_dark"
+    tools:context="lili.tesla.foxdivination.presentation.screen.ekaterina.result.view.EkaterinaResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/background_gray_blue">
+
+        <ImageButton
+            android:id="@+id/button_ekaterina_result_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_close"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_ekaterina_result"
+            android:layout_below="@id/button_ekaterina_result_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/image_ekaterina_result_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+                <ImageView
+                    android:id="@+id/image_ekaterina_result_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+                <ImageView
+                    android:id="@+id/image_ekaterina_result_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textview_ekaterina_result_caption_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="название"
+                android:textSize="14sp"
+                android:textColor="@color/brown_dark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textview_ekaterina_result_description_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="результаты"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/brown_dark"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textview_ekaterina_result_caption_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="название"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/brown_dark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textview_ekaterina_result_description_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="результаты"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/brown_dark"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textview_ekaterina_result_caption_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="название"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/brown_dark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textview_ekaterina_result_description_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="результаты"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/brown_dark"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_ekaterina_result_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_back"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

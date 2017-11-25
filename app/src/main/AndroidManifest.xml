@@ -20,7 +20,9 @@
         <activity android:name=".presentation.screen.china.mainChina.view.ChinaActivity" />
         <activity android:name=".presentation.screen.china.fateBook.devination.view.FateBookDevinationActivity" />
         <activity android:name=".presentation.screen.china.fateBook.main.view.FateBookMainActivity" />
-        <activity android:name=".presentation.screen.china.fateBook.result.view.FateBookResultActivity"></activity>
+        <activity android:name=".presentation.screen.china.fateBook.result.view.FateBookResultActivity" />
+        <activity android:name=".presentation.screen.ekaterina.main.view.EkaterinaMainActivity" />
+        <activity android:name=".presentation.screen.ekaterina.result.view.EkaterinaResultActivity"></activity>
     </application>
 
 </manifest>

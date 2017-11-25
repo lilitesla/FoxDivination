@@ -22,11 +22,11 @@
                 android:id="@+id/main_button_china"
                 android:background="@drawable/china"
                 style="@style/imageButtonStyle"
-                android:textAlignment="center"
                 />
 
             <ImageButton
-                android:background="@drawable/ekaterina_anchor"
+                android:id="@+id/main_button_ekaterina"
+                android:background="@drawable/ekaterina2"
                 style="@style/imageButtonStyle"/>
 
             <ImageButton

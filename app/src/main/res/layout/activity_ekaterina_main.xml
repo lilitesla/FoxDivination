@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_gray_blue_dark"
-    android:padding="10dp"
+    android:padding="15dp"
     tools:context="lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.EkaterinaMainActivity">
 
     <ScrollView

@@ -42,28 +42,12 @@ public class DataBaseAccess {
     }
 
     // China_FateBook
-
-    public int getFateBookId (String predIndexId) {
+    public Prediction getFateBookPrediction (String predIndex) {
         open();
         String[] str = new String[1];
-        str[0] = predIndexId;
+        str[0] = predIndex;
 
-        Cursor cursor = database.rawQuery("SELECT id FROM china_fatebook WHERE index_id = ?", str);
-
-        cursor.moveToFirst();
-        int result = cursor.getInt(0);
-
-        cursor.close();
-        close();
-        return result;
-    }
-
-    public Prediction getFateBookPrediction (int predId) {
-        open();
-        String[] str = new String[1];
-        str[0] = predId + "";
-
-        Cursor cursor = database.rawQuery("SELECT * FROM china_fatebook WHERE id = ?", str);
+        Cursor cursor = database.rawQuery("SELECT * FROM china_fatebook WHERE index_id = ?", str);
         cursor.moveToFirst();
         Prediction result = new Prediction(cursor.getInt(0),
                 cursor.getString(1), cursor.getString(2),
@@ -74,7 +58,6 @@ public class DataBaseAccess {
     }
 
     // Ekaterina
-
     public Ekaterina getEkaterinaPrediction (int[] nums) {
         open();
 

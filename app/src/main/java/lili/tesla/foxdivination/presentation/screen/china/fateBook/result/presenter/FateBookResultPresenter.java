@@ -11,11 +11,11 @@ import lili.tesla.foxdivination.presentation.screen.china.fateBook.result.view.F
 
 public class FateBookResultPresenter extends BasePresenter<FateBookResultView> {
 
-    private int mPredId = 0;
+    private String mPredId = "";
     private Prediction mPrediction;
 
-    public void showResults(int predId) {
-        if (mPredId == 0) {
+    public void showResults(String predId) {
+        if (mPredId == "") {
             mPredId = predId;
             mPrediction = App.dataBaseAccess.getFateBookPrediction(mPredId);
         }

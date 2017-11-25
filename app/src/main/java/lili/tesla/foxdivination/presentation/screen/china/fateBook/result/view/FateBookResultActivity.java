@@ -27,12 +27,12 @@ import lili.tesla.foxdivination.presentation.screen.main.view.MainActivity;
 
 public class FateBookResultActivity extends BaseActivity implements FateBookResultView {
 
-    public static final String EXTRA_KEY_ID = "KEY_ID";
+    public static final String EXTRA_KEY_INDEX = "KEY_ID";
 
-    public static void start(Context context, int idPrediction) {
+    public static void start(Context context, String indexPrediction) {
         Intent intent = new Intent(context, FateBookResultActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putInt( EXTRA_KEY_ID, idPrediction);
+        bundle.putString( EXTRA_KEY_INDEX, indexPrediction);
         intent.putExtras(bundle);
         context.startActivity(intent);
     }
@@ -89,7 +89,7 @@ public class FateBookResultActivity extends BaseActivity implements FateBookResu
         lImage.add(mImageFateBookResultLine5);
         lImage.add(mImageFateBookResultLine6);
 
-        mPresenter.showResults(getIntent().getIntExtra(EXTRA_KEY_ID, 0));
+        mPresenter.showResults(getIntent().getStringExtra(EXTRA_KEY_INDEX));
     }
 
     @OnClick(R.id.button_fatebook_result_back)

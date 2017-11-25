@@ -6,7 +6,7 @@ package lili.tesla.foxdivination.presentation.screen.china.fateBook.devination.v
 
 public interface FateBookDevinationView {
 
-    void showResultScreen(int predId);
+    void showResultScreen(String predId);
 
     void showLine(int lineNum, boolean isSolid);
 

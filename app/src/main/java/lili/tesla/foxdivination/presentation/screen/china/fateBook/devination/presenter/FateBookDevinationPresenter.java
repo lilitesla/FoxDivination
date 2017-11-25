@@ -57,7 +57,7 @@ public class FateBookDevinationPresenter extends BasePresenter<FateBookDevinatio
 
     public void showResultScreen() {
 
-        mView.showResultScreen(App.dataBaseAccess.getFateBookId(mPredIndex));
+        mView.showResultScreen(mPredIndex);
     }
 
     public void changeManualText() {

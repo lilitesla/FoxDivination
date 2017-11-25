@@ -121,7 +121,7 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
     }
 
     @Override
-    public void showResultScreen(int predId) {
+    public void showResultScreen(String predId) {
         FateBookResultActivity.start(this, predId);
         finish();
     }

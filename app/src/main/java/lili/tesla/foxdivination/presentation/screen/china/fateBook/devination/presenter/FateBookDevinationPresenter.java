@@ -19,7 +19,7 @@ public class FateBookDevinationPresenter extends BasePresenter<FateBookDevinatio
 
    public void showLines() {
        for (int i = 0; i < clickNum; i ++) {
-           showLine(i + 1);
+           showLine(i);
        }
 
     }
@@ -37,7 +37,7 @@ public class FateBookDevinationPresenter extends BasePresenter<FateBookDevinatio
             mPredIndex += "1";
         }
 
-        showLine(clickNum);
+        showLine(clickNum - 1);
         showCoin(coin1, coin2, coin3);
         changeManualText();
 
@@ -48,7 +48,7 @@ public class FateBookDevinationPresenter extends BasePresenter<FateBookDevinatio
     }
 
     public void showLine(int num) {
-       mView.showLine(num, (mPredIndex.charAt(num-1) == '2'));
+       mView.showLine(num, (mPredIndex.charAt(num) == '2'));
     }
 
     public void showCoin(int coin1, int coin2, int coin3) {

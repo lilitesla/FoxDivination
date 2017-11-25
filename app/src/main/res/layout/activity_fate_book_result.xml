@@ -41,28 +41,7 @@
                     android:layout_marginBottom="20dp">
 
                     <ImageView
-                        android:id="@+id/image_fatebook_result_line_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="10dp"/>
-
-                    <ImageView
-                        android:id="@+id/image_fatebook_result_line_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="10dp"/>
-
-                    <ImageView
-                        android:id="@+id/image_fatebook_result_line_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="20dp"/>
-
-                    <ImageView
-                        android:id="@+id/image_fatebook_result_line_4"
+                        android:id="@+id/image_fatebook_result_line_6"
                         android:layout_width="wrap_content"
                         android:layout_height="15dp"
                         android:background="@drawable/fatebook_solid_line"
@@ -76,7 +55,28 @@
                         android:layout_marginBottom="10dp"/>
 
                     <ImageView
-                        android:id="@+id/image_fatebook_result_line_6"
+                        android:id="@+id/image_fatebook_result_line_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:background="@drawable/fatebook_solid_line"
+                        android:layout_marginBottom="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/image_fatebook_result_line_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:background="@drawable/fatebook_solid_line"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/image_fatebook_result_line_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:background="@drawable/fatebook_solid_line"
+                        android:layout_marginBottom="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/image_fatebook_result_line_1"
                         android:layout_width="wrap_content"
                         android:layout_height="15dp"
                         android:background="@drawable/fatebook_solid_line"/>

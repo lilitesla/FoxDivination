@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -29,6 +32,7 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
     }
 
     private FateBookDevinationPresenter mPresenter;
+    private ArrayList<ImageView> lImage;
 
     @BindView(R.id.button_fatebook_divination_toss_a_coin)
     Button mButtonTossCoin;
@@ -89,6 +93,15 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
         mTextviewFatebookDivinationDescription.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/segoeuil.ttf"));
 
+        lImage = new ArrayList<>(6);
+
+        lImage.add(mFateBookDivinationLine1);
+        lImage.add(mFateBookDivinationLine2);
+        lImage.add(mFateBookDivinationLine3);
+        lImage.add(mFateBookDivinationLine4);
+        lImage.add(mFateBookDivinationLine5);
+        lImage.add(mFateBookDivinationLine6);
+
         mPresenter.showLines();
     }
 
@@ -115,61 +128,11 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
 
     @Override
     public void showLine(int lineNum, boolean isSolid) {
-        switch (lineNum) {
-            case 1: {
-                mFateBookDivinationLine1.setVisibility(View.VISIBLE);
-                if (isSolid) {
-                    mFateBookDivinationLine1.setBackgroundResource(R.drawable.fatebook_solid_line);
-                } else {
-                    mFateBookDivinationLine1.setBackgroundResource(R.drawable.fatebook_dashed_line);
-                }
-                break;
-            }
-            case 2: {
-                mFateBookDivinationLine2.setVisibility(View.VISIBLE);
-                if (isSolid) {
-                    mFateBookDivinationLine2.setBackgroundResource(R.drawable.fatebook_solid_line);
-                } else {
-                    mFateBookDivinationLine2.setBackgroundResource(R.drawable.fatebook_dashed_line);
-                }
-                break;
-            }
-            case 3: {
-                mFateBookDivinationLine3.setVisibility(View.VISIBLE);
-                if (isSolid) {
-                    mFateBookDivinationLine3.setBackgroundResource(R.drawable.fatebook_solid_line);
-                } else {
-                    mFateBookDivinationLine3.setBackgroundResource(R.drawable.fatebook_dashed_line);
-                }
-                break;
-            }
-            case 4: {
-                mFateBookDivinationLine4.setVisibility(View.VISIBLE);
-                if (isSolid) {
-                    mFateBookDivinationLine4.setBackgroundResource(R.drawable.fatebook_solid_line);
-                } else {
-                    mFateBookDivinationLine4.setBackgroundResource(R.drawable.fatebook_dashed_line);
-                }
-                break;
-            }
-            case 5: {
-                mFateBookDivinationLine5.setVisibility(View.VISIBLE);
-                if (isSolid) {
-                    mFateBookDivinationLine5.setBackgroundResource(R.drawable.fatebook_solid_line);
-                } else {
-                    mFateBookDivinationLine5.setBackgroundResource(R.drawable.fatebook_dashed_line);
-                }
-                break;
-            }
-            case 6: {
-                mFateBookDivinationLine6.setVisibility(View.VISIBLE);
-                if (isSolid) {
-                    mFateBookDivinationLine6.setBackgroundResource(R.drawable.fatebook_solid_line);
-                } else {
-                    mFateBookDivinationLine6.setBackgroundResource(R.drawable.fatebook_dashed_line);
-                }
-                break;
-            }
+        lImage.get(lineNum).setVisibility(View.VISIBLE);
+        if (isSolid) {
+            lImage.get(lineNum).setBackgroundResource(R.drawable.fatebook_solid_line);
+        } else {
+            lImage.get(lineNum).setBackgroundResource(R.drawable.fatebook_dashed_line);
         }
     }
 
@@ -185,29 +148,31 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
         mTextviewFatebookInYan.setVisibility(View.VISIBLE);
         mLlFateBookCoins.setVisibility(View.VISIBLE);
 
-        if (coin1 == 2) {
-            mImageFateBookDivination1.setBackgroundResource(R.drawable.fatebook_yan);
-        } else {
-            mImageFateBookDivination1.setBackgroundResource(R.drawable.fatebook_in);
-        }
-
-        if (coin2 == 2) {
-            mImageFateBookDivination2.setBackgroundResource(R.drawable.fatebook_yan);
-        } else {
-            mImageFateBookDivination2.setBackgroundResource(R.drawable.fatebook_in);
-        }
-
-        if (coin3 == 2) {
-            mImageFateBookDivination3.setBackgroundResource(R.drawable.fatebook_yan);
-        } else {
-            mImageFateBookDivination3.setBackgroundResource(R.drawable.fatebook_in);
-        }
-
         if (isYan) {
             mTextviewFatebookInYan.setText(R.string.fate_book_divination_yan);
-
         } else {
             mTextviewFatebookInYan.setText(R.string.fate_book_divination_in);
+        }
+
+        boolean[] coins = new boolean[3];
+
+        coins[0] = (coin1 == 2);
+        coins[1] = (coin2 == 2);
+        coins[2] = (coin3 == 2);
+
+        ArrayList<ImageView> lCoinsImages = new ArrayList<>(3);
+
+        lCoinsImages.add(mImageFateBookDivination1);
+        lCoinsImages.add(mImageFateBookDivination2);
+        lCoinsImages.add(mImageFateBookDivination3);
+
+
+        for (int i = 0; i < 3; i++) {
+            if (coins[i]) {
+                lCoinsImages.get(i).setBackgroundResource(R.drawable.fatebook_yan);
+            } else {
+                lCoinsImages.get(i).setBackgroundResource(R.drawable.fatebook_in);
+            }
         }
     }
 

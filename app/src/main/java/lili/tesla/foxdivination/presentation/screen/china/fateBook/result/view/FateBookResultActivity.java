@@ -24,6 +24,7 @@ import lili.tesla.foxdivination.presentation.screen.china.fateBook.main.presente
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.result.presenter.FateBookResultPresenter;
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.result.view.FateBookResultView;
 import lili.tesla.foxdivination.presentation.screen.main.view.MainActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class FateBookResultActivity extends BaseActivity implements FateBookResultView {
 
@@ -40,10 +41,10 @@ public class FateBookResultActivity extends BaseActivity implements FateBookResu
     private FateBookResultPresenter mPresenter;
     private ArrayList<ImageView> lImage;
 
-    @BindView(R.id.textview_fate_book_result_caption)
+    @BindView(R.id.textview_fatebook_result_caption)
     TextView mTextViewFateBookResultCaption;
 
-    @BindView(R.id.textview_fate_book_result_description)
+    @BindView(R.id.textview_fatebook_result_description)
     TextView mTextViewFateBookResultDescription;
 
     @BindView(R.id.image_fatebook_result_line_1)
@@ -75,10 +76,8 @@ public class FateBookResultActivity extends BaseActivity implements FateBookResu
         mPresenter = new FateBookResultPresenter();
         mPresenter.setView(this);
 
-        mTextViewFateBookResultCaption.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewFateBookResultDescription.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
+        Utils.setTypefaceBold(mTextViewFateBookResultCaption);
+        Utils.setTypefaceLite(mTextViewFateBookResultDescription);
 
         lImage = new ArrayList<>(6);
 

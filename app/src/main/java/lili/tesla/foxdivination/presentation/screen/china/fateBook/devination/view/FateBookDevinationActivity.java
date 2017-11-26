@@ -21,6 +21,7 @@ import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.devination.presenter.FateBookDevinationPresenter;
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.result.view.FateBookResultActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class FateBookDevinationActivity extends BaseActivity implements FateBookDevinationView {
 
@@ -55,7 +56,7 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
     @BindView(R.id.image_fatebook_divination_3)
     ImageView mImageFateBookDivination3;
 
-    @BindView(R.id.ll_fate_book_coins)
+    @BindView(R.id.ll_fatebook_coins)
     LinearLayout mLlFateBookCoins;
 
 
@@ -88,10 +89,8 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
         mPresenter = new FateBookDevinationPresenter();
         mPresenter.setView(this);
 
-        mTextviewFatebookInYan.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextviewFatebookDivinationDescription.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
+        Utils.setTypefaceBold(mTextviewFatebookInYan);
+        Utils.setTypefaceLite(mTextviewFatebookDivinationDescription);
 
         lImage = new ArrayList<>(6);
 

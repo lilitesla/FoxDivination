@@ -8,5 +8,6 @@ public interface ChinaView {
 
     void showMainScreen();
     void showFateBookScreen();
+    void showDominoScreen();
 
 }

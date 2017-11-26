@@ -30,23 +30,12 @@ public class Prediction {
         return index_id;
     }
 
-    public void setIndex_id(String index_id) {
-        this.index_id = index_id;
-    }
-
     public String getCaption() {
         return caption;
-    }
-
-    public void setCaption(String caption) {
-        this.caption = caption;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

@@ -22,7 +22,11 @@
         <activity android:name=".presentation.screen.china.fateBook.main.view.FateBookMainActivity" />
         <activity android:name=".presentation.screen.china.fateBook.result.view.FateBookResultActivity" />
         <activity android:name=".presentation.screen.ekaterina.main.view.EkaterinaMainActivity" />
-        <activity android:name=".presentation.screen.ekaterina.result.view.EkaterinaResultActivity"></activity>
+        <activity android:name=".presentation.screen.ekaterina.result.view.EkaterinaResultActivity" />
+        <activity android:name=".presentation.screen.china.domino.main.view.DominoMainActivity" />
+        <activity android:name=".presentation.screen.china.domino.resultOne.view.DominoResultOneActivity" />
+        <activity android:name=".presentation.screen.china.domino.resultThree.view.DominoResultThreeActivity" />
+        <activity android:name=".presentation.screen.china.domino.resultSeven.view.DominoResultSevenActivity"></activity>
     </application>
 
 </manifest>

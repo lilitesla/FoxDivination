@@ -1,94 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_gray_blue_dark"
-    android:padding="15dp"
+    style="@style/linearLayoutMainStyle"
     tools:context="lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_gray_blue"
-        >
-        <LinearLayout
-            android:id="@+id/llChina"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        android:background="@color/background_gray_blue">
 
-            <ImageView
-                android:id="@+id/image_china"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:background="@drawable/china"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_alignParentTop="true"/>
-
-            <TextView
-                android:id="@+id/textview_china_caption"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/china_caption"
-                android:textSize="14sp"
-                android:textColor="@color/brown_dark"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:id="@+id/textview_china_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/china_description"
-                android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:textColor="@color/brown_dark"
-                android:gravity="center_horizontal"/>
-
-            <LinearLayout
+             <LinearLayout
+                android:id="@+id/llChina"
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/button_fate_book"
-                    style="@style/imageButtonStyle"
-                    android:background="@drawable/ekaterina_book"
-                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/image_china"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/china"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentTop="true"/>
 
-                <Button
-                    style="@style/imageButtonStyle"
-                    android:background="@drawable/ekaterina_crown"
-                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/textview_china_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/china_caption"
+                    android:textSize="16sp"
+                    android:textColor="@color/brown_dark"
+                    android:layout_gravity="center"/>
 
-                <Button
-                    style="@style/imageButtonStyle"
-                    android:background="@drawable/ekaterina_crown"
-                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/textview_china_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/china_description"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/brown_dark"
+                    android:gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_fatebook"
+                        style="@style/imageButtonStyle"
+                        android:background="@drawable/ekaterina_book"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:id="@+id/button_domino"
+                        style="@style/imageButtonStyle"
+                        android:background="@drawable/domino"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        style="@style/imageButtonStyle"
+                        android:background="@drawable/ekaterina_crown"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+                 <ImageButton
+                     android:id="@+id/button_china_back"
+                     style="@style/buttonBackStyle" />/>
 
             </LinearLayout>
 
-        </LinearLayout>
-
-
-
-        <ImageButton
-            android:id="@+id/button_china_back"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_back"
-            android:layout_marginBottom="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"/>
-
-    </RelativeLayout>
+    </ScrollView>
 
 </LinearLayout>

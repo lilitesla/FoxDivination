@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_gray_blue_dark"
-    android:padding="15dp"
+    style="@style/linearLayoutMainStyle"
     tools:context="lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity">
 
     <RelativeLayout
@@ -13,7 +10,7 @@
         android:background="@color/background_gray_blue"
         >
         <LinearLayout
-            android:id="@+id/llFateBookDivination"
+            android:id="@+id/ll_fate_book_divination"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -80,14 +77,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fate_book_divination_manual_0"
-                android:textSize="14sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:textColor="@color/brown_dark"
                 android:gravity="center_horizontal"/>
 
             <LinearLayout
-                android:id="@+id/ll_fate_book_coins"
+                android:id="@+id/ll_fatebook_coins"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:gravity="center"
@@ -165,13 +162,7 @@
 
         <ImageButton
             android:id="@id/button_fatebook_divination_back"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_back"
-            android:layout_marginBottom="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"/>
+            style="@style/buttonBackStyle" />
 
     </RelativeLayout>
 

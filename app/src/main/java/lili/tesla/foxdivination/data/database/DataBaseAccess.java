@@ -78,9 +78,27 @@ public class DataBaseAccess {
             cursor.close();
         }
 
-        Ekaterina result = new Ekaterina(captions[0], descriptions[0], captions[1], descriptions[1], captions[2], descriptions[2]);
+        Ekaterina result = new Ekaterina(nums, captions, descriptions);
         close();
         return result;
+    }
+
+    // Domino
+
+    public String getDominoDescription (int num) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = num + "";
+
+        Cursor cursor = database.rawQuery("SELECT description FROM domino WHERE id = ?", str);
+        cursor.moveToFirst();
+
+        String caption = cursor.getString(0);
+        cursor.close();
+
+        close();
+        return caption;
     }
 
 

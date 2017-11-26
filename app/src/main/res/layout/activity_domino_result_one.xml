@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="lili.tesla.foxdivination.presentation.screen.china.domino.resultOne.view.DominoResultOneActivity"
+    style="@style/linearLayoutMainStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray_blue">
+
+        <ImageButton
+            android:id="@+id/button_domino_result_one_close"
+            style="@style/buttonCloseStyle" />
+
+        <LinearLayout
+            android:id="@+id/ll_ekaterina_domino_result_one"
+            android:layout_below="@id/button_domino_result_one_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/image_domino_result_one"
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:background="@drawable/domino_66"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/textview_domino_result_one_description"
+                style="@style/textviewDominoDescriptionStyle" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_domino_result_one_back"
+            style="@style/buttonBackStyle" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

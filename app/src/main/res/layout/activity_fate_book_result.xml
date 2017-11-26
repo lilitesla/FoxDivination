@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="15dp"
-    android:background="@color/background_gray_blue_dark"
+    style="@style/linearLayoutMainStyle"
     tools:context="lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity">
 
     <ScrollView
@@ -19,23 +16,18 @@
 
             <ImageButton
                 android:id="@+id/button_fatebook_result_close"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@drawable/button_close"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"/>
+                style="@style/buttonCloseStyle" />
 
             <LinearLayout
-                android:id="@+id/llFateBookResult"
+                android:id="@+id/ll_fatebook_result"
                 android:layout_below="@id/button_fatebook_result_close"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:layout_marginBottom="20dp">
@@ -43,74 +35,70 @@
                     <ImageView
                         android:id="@+id/image_fatebook_result_line_6"
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
+                        android:layout_height="10dp"
                         android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <ImageView
                         android:id="@+id/image_fatebook_result_line_5"
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
+                        android:layout_height="10dp"
                         android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <ImageView
                         android:id="@+id/image_fatebook_result_line_4"
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
+                        android:layout_height="10dp"
                         android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="20dp"/>
+                        android:layout_marginBottom="15dp"/>
 
                     <ImageView
                         android:id="@+id/image_fatebook_result_line_3"
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
+                        android:layout_height="10dp"
                         android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <ImageView
                         android:id="@+id/image_fatebook_result_line_2"
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
+                        android:layout_height="10dp"
                         android:background="@drawable/fatebook_solid_line"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <ImageView
                         android:id="@+id/image_fatebook_result_line_1"
                         android:layout_width="wrap_content"
-                        android:layout_height="15dp"
+                        android:layout_height="10dp"
                         android:background="@drawable/fatebook_solid_line"/>
 
                 </LinearLayout>
 
 
                 <TextView
-                    android:id="@+id/textview_fate_book_result_caption"
+                    android:id="@+id/textview_fatebook_result_caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="название"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textColor="@color/brown_dark"
                     android:layout_gravity="center"/>
 
                 <TextView
-                    android:id="@+id/textview_fate_book_result_description"
+                    android:id="@+id/textview_fatebook_result_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="результаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\n"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:textColor="@color/brown_dark"
                     android:gravity="center_horizontal"/>
 
                 <ImageButton
                     android:id="@+id/button_fatebook_result_back"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/button_back"
-                    android:layout_marginBottom="20dp"/>
+                    style="@style/buttonBackStyle" />
 
             </LinearLayout>
 

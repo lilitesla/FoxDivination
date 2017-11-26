@@ -1,98 +1,86 @@
 package lili.tesla.foxdivination.data;
 
+import lili.tesla.foxdivination.R;
+
 /**
  * Created by Лилия on 25.11.2017.
  */
 
 public class Ekaterina {
-    private String caption1;
-    private String description1;
-    private String caption2;
-    private String description2;
-    private String caption3;
-    private String description3;
-    private int imageId1;
-    private int imageId2;
-    private int imageId3;
+    private int[] ides;
+    private String[] captions;
+    private String[] descriptions;
+    private int[] imageIdes;
 
-    public Ekaterina(String cap1, String desc1, String cap2, String desc2, String cap3, String desc3) {
-        caption1 = cap1;
-        description1 = desc1;
-        caption2 = cap2;
-        description2 = desc2;
-        caption3 = cap3;
-        description3 = desc3;
+    public Ekaterina(int[] iIdes, String[] sCaptions, String[] sDescriptions) {
+        ides = iIdes;
+        captions = sCaptions;
+        descriptions = sDescriptions;
+
+        imageIdes = new int[iIdes.length];
+        for (int i = 0; i < iIdes.length; i ++) {
+            imageIdes[i] = getImageId(iIdes[i]);
+        }
     }
 
-    public String getCaption1() {
-        return caption1;
+    public String[] getCaptions() {
+        return captions;
     }
 
-    public void setCaption1(String caption1) {
-        this.caption1 = caption1;
+    public String[] getDescriptions() {
+        return descriptions;
     }
 
-    public String getDescription1() {
-        return description1;
+    public int[] getImageIdes() {
+        return imageIdes;
     }
 
-    public void setDescription1(String description1) {
-        this.description1 = description1;
-    }
+    private int getImageId(int imageNum) {
+        int result = 0;
 
-    public String getCaption2() {
-        return caption2;
-    }
+        switch (imageNum) {
+            case 1: result = R.drawable.ekaterina_drum; break;
+            case 2: result = R.drawable.ekaterina_bow; break;
+            case 3: result = R.drawable.ekaterina_weigher; break;
+            case 4: result = R.drawable.ekaterina_hair; break;
+            case 5: result = R.drawable.ekaterina_woman; break;
+            case 6: result = R.drawable.ekaterina_coins; break;
+            case 7: result = R.drawable.ekaterina_tree; break;
+            case 8: result = R.drawable.ekaterina_lock; break;
+            case 9: result = R.drawable.ekaterina_coach; break;
+            case 10: result = R.drawable.ekaterina_dagger; break;
+            case 11: result = R.drawable.ekaterina_keys; break;
+            case 12: result = R.drawable.ekaterina_book; break;
+            case 13: result = R.drawable.ekaterina_bell; break;
+            case 14: result = R.drawable.ekaterina_quiver_arrows; break;
+            case 15: result = R.drawable.ekaterina_rings; break;
+            case 16: result = R.drawable.ekaterina_cover; break;
+            case 17: result = R.drawable.ekaterina_crown; break;
+            case 18: result = R.drawable.ekaterina_ship; break;
+            case 19: result = R.drawable.ekaterina_bonfire; break;
+            case 20: result = R.drawable.ekaterina_cross; break;
+            case 21: result = R.drawable.ekaterina_swan; break;
+            case 22: result = R.drawable.ekaterina_moon_stars; break;
+            case 23: result = R.drawable.ekaterina_man; break;
+            case 24: result = R.drawable.ekaterina_horseshoe; break;
+            case 25: result = R.drawable.ekaterina_rainbow; break;
+            case 26: result = R.drawable.ekaterina_glass; break;
+            case 27: result = R.drawable.ekaterina_candles; break;
+            case 28: result = R.drawable.ekaterina_heart; break;
+            case 29: result = R.drawable.ekaterina_sun; break;
+            case 30: result = R.drawable.ekaterina_arrow; break;
+            case 31: result = R.drawable.ekaterina_sultan; break;
+            case 32: result = R.drawable.ekaterina_snail; break;
+            case 33: result = R.drawable.ekaterina_veil; break;
+            case 34: result = R.drawable.ekaterina_flower; break;
+            case 35: result = R.drawable.ekaterina_chains; break;
+            case 36: result = R.drawable.ekaterina_church; break;
+            case 37: result = R.drawable.ekaterina_clock; break;
+            case 38: result = R.drawable.ekaterina_heck; break;
+            case 39: result = R.drawable.ekaterina_skull; break;
+            case 40: result = R.drawable.ekaterina_anchor; break;
+        }
 
-    public void setCaption2(String caption2) {
-        this.caption2 = caption2;
-    }
-
-    public String getDescription2() {
-        return description2;
-    }
-
-    public void setDescription2(String description2) {
-        this.description2 = description2;
-    }
-
-    public String getCaption3() {
-        return caption3;
-    }
-
-    public void setCaption3(String caption3) {
-        this.caption3 = caption3;
-    }
-
-    public String getDescription3() {
-        return description3;
-    }
-
-    public void setDescription3(String description3) {
-        this.description3 = description3;
-    }
-
-    public int getImageId1() {
-        return imageId1;
-    }
-
-    public void setImageId1(int imageId1) {
-        this.imageId1 = imageId1;
-    }
-
-    public int getImageId2() {
-        return imageId2;
-    }
-
-    public void setImageId2(int imageId2) {
-        this.imageId2 = imageId2;
-    }
-
-    public int getImageId3() {
-        return imageId3;
-    }
-
-    public void setImageId3(int imageId3) {
-        this.imageId3 = imageId3;
+        return result;
     }
 }

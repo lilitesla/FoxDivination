@@ -15,6 +15,7 @@ import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.ekaterina.main.presenter.EkaterinaMainPresenter;
 import lili.tesla.foxdivination.presentation.screen.ekaterina.result.view.EkaterinaResultActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class EkaterinaMainActivity extends BaseActivity implements EkaterinaMainView {
 
@@ -47,12 +48,9 @@ public class EkaterinaMainActivity extends BaseActivity implements EkaterinaMain
         mPresenter = new EkaterinaMainPresenter();
         mPresenter.setView(this);
 
-        mTextViewEkaterinaMainCaption.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewEkaterinaMainDescription.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
-        mButtonAboutEkaterina.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
+        Utils.setTypefaceBold(mTextViewEkaterinaMainCaption);
+        Utils.setTypefaceLite(mTextViewEkaterinaMainDescription);
+        Utils.setTypefaceLite(mButtonAboutEkaterina);
 
     }
 

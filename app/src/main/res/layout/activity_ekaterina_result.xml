@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="15dp"
-    android:background="@color/background_gray_blue_dark"
+    style="@style/linearLayoutMainStyle"
     tools:context="lili.tesla.foxdivination.presentation.screen.ekaterina.result.view.EkaterinaResultActivity">
 
     <RelativeLayout
@@ -14,12 +11,7 @@
 
         <ImageButton
             android:id="@+id/button_ekaterina_result_close"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_close"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"/>
+            style="@style/buttonCloseStyle" />
 
         <LinearLayout
             android:id="@+id/ll_ekaterina_result"
@@ -65,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="название"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textColor="@color/brown_dark"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>
@@ -75,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="результаты"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/brown_dark"
@@ -86,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="название"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/brown_dark"
                 android:layout_marginLeft="20dp"
@@ -97,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="результаты"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/brown_dark"
@@ -108,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="название"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/brown_dark"
                 android:layout_marginLeft="20dp"
@@ -119,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="результаты"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/brown_dark"
@@ -129,13 +121,7 @@
 
         <ImageButton
             android:id="@+id/button_ekaterina_result_back"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_back"
-            android:layout_marginBottom="10dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"/>
+            style="@style/buttonBackStyle" />
 
 
     </RelativeLayout>

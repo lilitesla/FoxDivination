@@ -17,4 +17,6 @@ public class ChinaPresenter extends BasePresenter<ChinaView> {
         mView.showFateBookScreen();
     }
 
+    public void showDominoScreen() { mView.showDominoScreen(); }
+
 }

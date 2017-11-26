@@ -17,6 +17,7 @@ import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.ekaterina.result.presenter.EkaterinaResultPresenter;
 import lili.tesla.foxdivination.presentation.screen.main.view.MainActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class EkaterinaResultActivity extends BaseActivity implements EkaterinaResultView {
 
@@ -28,6 +29,10 @@ public class EkaterinaResultActivity extends BaseActivity implements EkaterinaRe
     }
 
     private EkaterinaResultPresenter mPresenter;
+
+    private TextView[] captions;
+    private TextView[] descriptions;
+    private ImageView[] images;
 
     @BindView(R.id.textview_ekaterina_result_caption_1)
     TextView mTextViewEkaterinaResultCaption1;
@@ -67,18 +72,25 @@ public class EkaterinaResultActivity extends BaseActivity implements EkaterinaRe
         mPresenter = new EkaterinaResultPresenter();
         mPresenter.setView(this);
 
-        mTextViewEkaterinaResultCaption1.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewEkaterinaResultDescription1.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
-        mTextViewEkaterinaResultCaption2.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewEkaterinaResultDescription2.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
-        mTextViewEkaterinaResultCaption3.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewEkaterinaResultDescription3.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
+        captions = new TextView[] {
+                mTextViewEkaterinaResultCaption1,
+                mTextViewEkaterinaResultCaption2,
+                mTextViewEkaterinaResultCaption3};
+
+        descriptions = new TextView[] {
+                mTextViewEkaterinaResultDescription1,
+                mTextViewEkaterinaResultDescription2,
+                mTextViewEkaterinaResultDescription3};
+
+        images = new ImageView[] {
+                mImageEkaterinaResult1,
+                mImageEkaterinaResult2,
+                mImageEkaterinaResult3};
+
+        for (int i = 0; i < 3; i ++) {
+            Utils.setTypefaceBold(captions[i]);
+            Utils.setTypefaceLite(descriptions[i]);
+        }
 
         mPresenter.showResults();
     }
@@ -94,18 +106,12 @@ public class EkaterinaResultActivity extends BaseActivity implements EkaterinaRe
         finish();
     }
 
-
     @Override
     public void showResults(Ekaterina ekaterina) {
-        mTextViewEkaterinaResultCaption1.setText(ekaterina.getCaption1());
-        mTextViewEkaterinaResultDescription1.setText(ekaterina.getDescription1());
-        mTextViewEkaterinaResultCaption2.setText(ekaterina.getCaption2());
-        mTextViewEkaterinaResultDescription2.setText(ekaterina.getDescription2());
-        mTextViewEkaterinaResultCaption3.setText(ekaterina.getCaption3());
-        mTextViewEkaterinaResultDescription3.setText(ekaterina.getDescription3());
-
-        mImageEkaterinaResult1.setBackgroundResource(ekaterina.getImageId1());
-        mImageEkaterinaResult2.setBackgroundResource(ekaterina.getImageId2());
-        mImageEkaterinaResult3.setBackgroundResource(ekaterina.getImageId3());
+        for (int i = 0; i < 3; i ++) {
+            captions[i].setText(ekaterina.getCaptions()[i]);
+            descriptions[i].setText(ekaterina.getDescriptions()[i]);
+            images[i].setBackgroundResource(ekaterina.getImageIdes()[i]);
+        }
     }
 }

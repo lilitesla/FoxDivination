@@ -18,6 +18,7 @@ import lili.tesla.foxdivination.presentation.screen.china.fateBook.devination.pr
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.devination.view.FateBookDevinationActivity;
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.main.presenter.FateBookMainPresenter;
 import lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class FateBookMainActivity extends BaseActivity implements FateBookMainView {
 
@@ -30,10 +31,10 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
 
     private FateBookMainPresenter mPresenter;
 
-    @BindView(R.id.textview_fate_book_main_caption)
+    @BindView(R.id.textview_fatebook_main_caption)
     TextView mTextViewFateBookMainCaption;
 
-    @BindView(R.id.textview_fate_book_main_description)
+    @BindView(R.id.textview_fatebook_main_description)
     TextView mTextViewFateBookMainDescription;
 
     @BindView(R.id.button_about_fatebook)
@@ -49,12 +50,10 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
         mPresenter = new FateBookMainPresenter();
         mPresenter.setView(this);
 
-        mTextViewFateBookMainCaption.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewFateBookMainDescription.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
-        mButtonAboutFatebook.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
+        Utils.setTypefaceBold(mTextViewFateBookMainCaption);
+        Utils.setTypefaceLite(mTextViewFateBookMainDescription);
+        Utils.setTypefaceLite(mButtonAboutFatebook);
+
     }
 
     @OnClick (R.id.button_fatebook_main_back)

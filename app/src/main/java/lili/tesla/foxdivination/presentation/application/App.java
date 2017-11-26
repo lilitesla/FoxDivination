@@ -1,6 +1,7 @@
 package lili.tesla.foxdivination.presentation.application;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.facebook.stetho.Stetho;
 
@@ -12,6 +13,8 @@ import lili.tesla.foxdivination.data.database.DataBaseAccess;
  */
 
 public class App extends Application {
+
+    private static Context context;
 
     private static App instance;
     public static DataBaseAccess dataBaseAccess;
@@ -26,6 +29,11 @@ public class App extends Application {
         }
 
         dataBaseAccess = new DataBaseAccess(this);
+        context = this.getApplicationContext();
+    }
+
+    public static Context getContext() {
+        return context;
     }
 
     public static App getInstance() {

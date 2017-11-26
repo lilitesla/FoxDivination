@@ -13,9 +13,11 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
+import lili.tesla.foxdivination.presentation.screen.china.domino.main.view.DominoMainActivity;
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.main.view.FateBookMainActivity;
 import lili.tesla.foxdivination.presentation.screen.china.mainChina.presenter.ChinaPresenter;
 import lili.tesla.foxdivination.presentation.screen.main.view.MainActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class ChinaActivity extends BaseActivity implements ChinaView {
 
@@ -41,17 +43,18 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
         mPresenter = new ChinaPresenter();
         mPresenter.setView(this);
 
-        mTextViewChinaCaption.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/seguisb.ttf"));
-        mTextViewChinaDescription.setTypeface(Typeface.createFromAsset(
-                getAssets(), "fonts/segoeuil.ttf"));
+        Utils.setTypefaceBold(mTextViewChinaCaption);
+        Utils.setTypefaceLite(mTextViewChinaDescription);
 
     }
 
-    @OnClick (R.id.button_fate_book)
+    @OnClick (R.id.button_fatebook)
     void onButtonFateBookClick() {
         mPresenter.showFateBookScreen();
     }
+
+    @OnClick (R.id.button_domino)
+    void onButtonDominoClick() { mPresenter.showDominoScreen(); }
 
     @OnClick (R.id.button_china_back)
     void onButtonChinaBackClick() {
@@ -67,5 +70,10 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
     @Override
     public void showFateBookScreen() {
         FateBookMainActivity.start(this);
+    }
+
+    @Override
+    public void showDominoScreen() {
+        DominoMainActivity.start(this);
     }
 }

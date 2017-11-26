@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_gray_blue_dark"
-    android:padding="15dp"
+    style="@style/linearLayoutMainStyle"
     tools:context="lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.EkaterinaMainActivity">
 
     <ScrollView
@@ -20,8 +17,8 @@
 
             <ImageView
                 android:id="@+id/image_ekaterina_main"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:background="@drawable/ekaterina2"
                 android:layout_marginTop="20dp"
@@ -33,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ekaterina_caption"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textColor="@color/brown_dark"
                 android:layout_gravity="center"/>
 
@@ -42,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ekaterina_description"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="@color/brown_dark"
@@ -55,6 +52,7 @@
                 android:layout_gravity="center"
                 android:textColor="@color/blue_dark"
                 android:text="@string/about_devination"
+                android:textSize="16sp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"/>
 
@@ -71,12 +69,7 @@
 
             <ImageButton
                 android:id="@+id/button_ekaterina_main_back"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="@drawable/button_back"
-                android:layout_marginBottom="20dp"
-                android:layout_centerHorizontal="true"/>
+                style="@style/buttonBackStyle" />
 
         </LinearLayout>
 

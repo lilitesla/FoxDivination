@@ -102,8 +102,7 @@ public class EkaterinaResultActivity extends BaseActivity implements EkaterinaRe
 
     @OnClick (R.id.button_ekaterina_result_close)
     void onButtonEkaterinaResultCloseClick() {
-        MainActivity.start(this);
-        finish();
+        mPresenter.showMainScreen();
     }
 
     @Override
@@ -113,5 +112,10 @@ public class EkaterinaResultActivity extends BaseActivity implements EkaterinaRe
             descriptions[i].setText(ekaterina.getDescriptions()[i]);
             images[i].setBackgroundResource(ekaterina.getImageIdes()[i]);
         }
+    }
+
+    @Override
+    public void showMainScreen() {
+        MainActivity.start(this);
     }
 }

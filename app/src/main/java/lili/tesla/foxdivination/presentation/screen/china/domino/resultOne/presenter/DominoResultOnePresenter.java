@@ -27,6 +27,8 @@ public class DominoResultOnePresenter extends BasePresenter<DominoResultOneView>
         mView.showResults(dominoes);
     }
 
-
+    public void showMainScreen() {
+        mView.showMainScreen();
+    }
 
 }

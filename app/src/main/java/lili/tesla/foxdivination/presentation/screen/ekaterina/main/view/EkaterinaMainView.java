@@ -6,8 +6,6 @@ package lili.tesla.foxdivination.presentation.screen.ekaterina.main.view;
 
 public interface EkaterinaMainView {
 
-    void showAbout();
-    void showDescription();
     void showEkaterinaResult();
 
 }

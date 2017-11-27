@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context=".presentation.screen.jewish.kabbala.devination.view.KabbalaDevinationActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_kabbala_devination"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_kabbala_devination"
+                android:background="@drawable/kabbala"
+                style="@style/mainImageStyle" />
+
+            <TextView
+                android:id="@+id/textview_kabbala_devination_manual"
+                android:text="@string/kabala_manual"
+                style="@style/MainDescriptionStyle"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edittext_kabbala_devination_fio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textview_kabbala_devination_description"
+                android:text="1 + 1 + 10 + 15 = 27"
+                style="@style/MainDescriptionStyle"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_kabbala_devination_calc"
+            android:text="@string/button_calculate"
+            android:layout_above="@+id/button_kabbala_devination_back"
+            android:layout_centerHorizontal="true"
+            style="@style/showResultButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_kabbala_devination_show_result"
+            android:text="@string/button_show_results"
+            android:layout_above="@+id/button_kabbala_devination_back"
+            android:layout_centerHorizontal="true"
+            style="@style/showResultButtonStyle"
+            android:visibility="gone"/>
+
+
+        <ImageButton
+            android:id="@id/button_kabbala_devination_back"
+            style="@style/buttonBackStyle" />
+
+    </RelativeLayout>
+
+</LinearLayout>

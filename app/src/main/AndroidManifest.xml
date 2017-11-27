@@ -26,7 +26,14 @@
         <activity android:name=".presentation.screen.china.domino.main.view.DominoMainActivity" />
         <activity android:name=".presentation.screen.china.domino.resultOne.view.DominoResultOneActivity" />
         <activity android:name=".presentation.screen.china.domino.resultThree.view.DominoResultThreeActivity" />
-        <activity android:name=".presentation.screen.china.domino.resultSeven.view.DominoResultSevenActivity"></activity>
+        <activity android:name=".presentation.screen.china.domino.resultSeven.view.DominoResultSevenActivity" />
+        <activity android:name=".presentation.screen.jewish.kabbala.devination.view.KabbalaDevinationActivity" />
+        <activity android:name=".presentation.screen.jewish.kabbala.main.view.KabbalaMainActivity" />
+        <activity android:name=".presentation.screen.jewish.kabbala.result.view.KabbalaResultActivity" />
+        <activity android:name=".presentation.screen.jewish.mainJewish.view.JewishActivity" />
+        <activity android:name=".presentation.screen.jewish.question.devination.view.JewishQuestionDevinationActivity" />
+        <activity android:name=".presentation.screen.jewish.question.main.view.JewishQuestionMainActivity" />
+        <activity android:name=".presentation.screen.jewish.question.result.view.JewishQuestionResultActivity"></activity>
     </application>
 
 </manifest>

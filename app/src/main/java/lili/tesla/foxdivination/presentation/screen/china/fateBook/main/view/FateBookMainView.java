@@ -8,7 +8,5 @@ public interface FateBookMainView {
 
     void showChinaScreen();
     void showFateBookDivination();
-    void showAbout();
-    void showDescription();
 
 }

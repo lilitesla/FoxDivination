@@ -9,22 +9,8 @@ import lili.tesla.foxdivination.presentation.screen.china.fateBook.main.view.Fat
 
 public class FateBookMainPresenter extends BasePresenter<FateBookMainView> {
 
-    private boolean descriptionIsAbout = false;
-
     public void showChinaScreen() {
         mView.showChinaScreen();
-    }
-
-    public void changeDescriptionText() {
-        if (descriptionIsAbout) {
-            mView.showAbout();
-        } else {
-            mView.showDescription();
-        }
-    }
-
-    public void changeStateDescription() {
-        descriptionIsAbout = !descriptionIsAbout;
     }
 
     public void showFateBookDivination() {

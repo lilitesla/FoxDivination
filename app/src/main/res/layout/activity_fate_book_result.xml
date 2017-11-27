@@ -5,9 +5,7 @@
     tools:context="lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_gray_blue">
+        style="@style/ScrollViewStyle">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,9 +19,7 @@
             <LinearLayout
                 android:id="@+id/ll_fatebook_result"
                 android:layout_below="@id/button_fatebook_result_close"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                style="@style/LinearLayoutResultStyle">
 
                 <LinearLayout
                     android:layout_width="95dp"
@@ -78,23 +74,13 @@
 
                 <TextView
                     android:id="@+id/textview_fatebook_result_caption"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="название"
-                    android:textSize="16sp"
-                    android:textColor="@color/brown_dark"
-                    android:layout_gravity="center"/>
+                    style="@style/MainCaptionStyle"/>
 
                 <TextView
                     android:id="@+id/textview_fatebook_result_description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="результаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\nрезультаты\n"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:textColor="@color/brown_dark"
-                    android:gravity="center_horizontal"/>
+                    style="@style/MainDescriptionStyle"/>
 
                 <ImageButton
                     android:id="@+id/button_fatebook_result_back"

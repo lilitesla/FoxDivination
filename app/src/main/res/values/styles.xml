@@ -4,11 +4,18 @@
         <item name="colorPrimaryDark">@color/brown_dark</item>
     </style>
 
-    <style name="imageButtonStyle">
+    <style name="imageMainButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="imageButtonStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 
     <style name="textViewDominoCaptionStyle">
@@ -37,7 +44,7 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:background">@drawable/button_back</item>
-        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
     </style>
@@ -56,6 +63,74 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:padding">15dp</item>
         <item name="android:background">@color/background_gray_blue_dark</item>
+    </style>
+
+    <style name="MainCaptionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/brown_dark</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="MainDescriptionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textColor">@color/brown_dark</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="showResultButtonStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/background_gray_blue</item>
+        <item name="android:background">@color/brown_medium</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="mainImageStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="LinLayImageButtonsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ScrollViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/background_gray_blue</item>
+    </style>
+
+    <style name="MainLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayoutResultStyle">
+        <item name="android:layout_below">@id/button_ekaterina_result_close</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
 </resources>

@@ -37,9 +37,6 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
     @BindView(R.id.textview_fatebook_main_description)
     TextView mTextViewFateBookMainDescription;
 
-    @BindView(R.id.button_about_fatebook)
-    TextView mButtonAboutFatebook;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,19 +49,12 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
 
         Utils.setTypefaceBold(mTextViewFateBookMainCaption);
         Utils.setTypefaceLite(mTextViewFateBookMainDescription);
-        Utils.setTypefaceLite(mButtonAboutFatebook);
 
     }
 
     @OnClick (R.id.button_fatebook_main_back)
     void onButtonFateBookMainBackClick() {
         mPresenter.showChinaScreen();
-    }
-
-    @OnClick (R.id.button_about_fatebook)
-    void onButtonFateBookAbout() {
-        mPresenter.changeStateDescription();
-        mPresenter.changeDescriptionText();
     }
 
     @OnClick (R.id.button_fatebook_main_start)
@@ -83,15 +73,4 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
         FateBookDevinationActivity.start(this);
     }
 
-    @Override
-    public void showAbout() {
-        mButtonAboutFatebook.setText(R.string.description);
-        mTextViewFateBookMainDescription.setText(R.string.fate_book_main_about);
-    }
-
-    @Override
-    public void showDescription() {
-        mButtonAboutFatebook.setText(R.string.about_devination);
-        mTextViewFateBookMainDescription.setText(R.string.fate_book_main_description);
-    }
 }

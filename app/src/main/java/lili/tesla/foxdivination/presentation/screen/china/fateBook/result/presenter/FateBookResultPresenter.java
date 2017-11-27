@@ -22,5 +22,8 @@ public class FateBookResultPresenter extends BasePresenter<FateBookResultView> {
         mView.showResults(mPrediction);
     }
 
+    public void showMainScreen() {
+        mView.showMainScreen();
+    }
 
 }

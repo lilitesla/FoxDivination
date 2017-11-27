@@ -34,9 +34,6 @@ public class EkaterinaMainActivity extends BaseActivity implements EkaterinaMain
     @BindView(R.id.textview_ekaterina_main_description)
     TextView mTextViewEkaterinaMainDescription;
 
-    @BindView(R.id.button_about_ekaterina)
-    TextView mButtonAboutEkaterina;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +47,6 @@ public class EkaterinaMainActivity extends BaseActivity implements EkaterinaMain
 
         Utils.setTypefaceBold(mTextViewEkaterinaMainCaption);
         Utils.setTypefaceLite(mTextViewEkaterinaMainDescription);
-        Utils.setTypefaceLite(mButtonAboutEkaterina);
 
     }
 
@@ -59,29 +55,9 @@ public class EkaterinaMainActivity extends BaseActivity implements EkaterinaMain
         finish();
     }
 
-    @OnClick (R.id.button_about_ekaterina)
-    void onButtonAboutEkaterinaClick() {
-        mPresenter.changeStateDescription();
-        mPresenter.changeDescriptionText();
-    }
-
     @OnClick (R.id.button_ekaterina_main_start)
     void onButtonEkaterinaMainStartClick() {
         EkaterinaResultActivity.start(this);
-    }
-
-
-    @Override
-    public void showAbout() {
-        mButtonAboutEkaterina.setText(R.string.description);
-        mTextViewEkaterinaMainDescription.setText(R.string.ekaterina_about);
-    }
-
-    @Override
-    public void showDescription() {
-        mButtonAboutEkaterina.setText(R.string.about_devination);
-        mTextViewEkaterinaMainDescription.setText(R.string.ekaterina_description);
-
     }
 
     @Override

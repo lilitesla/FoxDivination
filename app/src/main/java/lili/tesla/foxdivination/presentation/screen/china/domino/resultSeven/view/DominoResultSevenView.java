@@ -10,4 +10,6 @@ public interface DominoResultSevenView {
 
     void showResults(Domino[] dominoes);
 
+    void showMainScreen();
+
 }

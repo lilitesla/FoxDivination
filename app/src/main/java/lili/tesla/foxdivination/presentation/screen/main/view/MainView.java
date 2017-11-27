@@ -7,4 +7,5 @@ package lili.tesla.foxdivination.presentation.screen.main.view;
 public interface MainView {
     void showChinaScreen();
     void showEkaterinaScreen();
+    void showJewishScreen();
 }

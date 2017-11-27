@@ -10,4 +10,6 @@ public interface FateBookResultView {
 
     void showResults(Prediction prediction);
 
+    void showMainScreen();
+
 }

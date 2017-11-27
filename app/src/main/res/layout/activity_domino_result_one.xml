@@ -5,21 +5,17 @@
     style="@style/linearLayoutMainStyle">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_gray_blue">
+        style="@style/ScrollViewStyle">
 
         <ImageButton
             android:id="@+id/button_domino_result_one_close"
-            style="@style/buttonCloseStyle" />
+            style="@style/buttonCloseStyle"
+            android:layout_margin="10dp"/>
 
         <LinearLayout
             android:id="@+id/ll_ekaterina_domino_result_one"
             android:layout_below="@id/button_domino_result_one_close"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            style="@style/LinearLayoutResultStyle">
 
             <ImageView
                 android:id="@+id/image_domino_result_one"

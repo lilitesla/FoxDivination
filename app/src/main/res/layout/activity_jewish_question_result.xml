@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/linearLayoutMainStyle"
+tools:context="lili.tesla.foxdivination.presentation.screen.jewish.question.result.view.JewishQuestionResultActivity">
+
+<RelativeLayout
+    style="@style/ScrollViewStyle">
+
+    <ImageButton
+        android:id="@+id/button_jewish_question_result_close"
+        style="@style/buttonCloseStyle"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_jewish_question_result"
+        android:layout_below="@id/button_jewish_question_result_close"
+        style="@style/MainLinearLayoutStyle">
+
+        <ImageView
+            android:id="@+id/image_jewish_question_result"
+            android:background="@drawable/kabbala"
+            style="@style/mainImageStyle" />
+
+        <TextView
+            android:id="@+id/textview_jewish_question_result_caption"
+            android:text="Вопрос"
+            style="@style/MainCaptionStyle" />
+
+        <TextView
+            android:id="@+id/textview_jewish_question_result_description"
+            android:text="Нет"
+            style="@style/MainDescriptionStyle"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_jewish_question_result_back"
+        style="@style/buttonBackStyle" />
+
+</RelativeLayout>
+
+</LinearLayout>

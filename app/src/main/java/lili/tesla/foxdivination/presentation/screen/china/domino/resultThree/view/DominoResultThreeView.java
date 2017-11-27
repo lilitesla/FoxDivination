@@ -10,4 +10,5 @@ public interface DominoResultThreeView {
 
     void showResults(Domino[] dominoes);
 
+    void showMainScreen();
 }

@@ -4,72 +4,43 @@
     style="@style/linearLayoutMainStyle"
     tools:context="lili.tesla.foxdivination.presentation.screen.china.domino.main.view.DominoMainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_gray_blue">
+    <ScrollView style="@style/ScrollViewStyle">
+
         <LinearLayout
             android:id="@+id/ll_domino_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            style="@style/MainLinearLayoutStyle">
 
             <ImageView
                 android:id="@+id/image_domino_main"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
                 android:background="@drawable/domino"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_alignParentTop="true"/>
+                style="@style/mainImageStyle"/>
 
             <TextView
                 android:id="@+id/textview_domino_main_caption"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/domino_caption"
-                android:textSize="16sp"
-                android:textColor="@color/brown_dark"
-                android:layout_gravity="center"/>
+                style="@style/MainCaptionStyle"/>
 
             <TextView
                 android:id="@+id/textview_domino_main_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/domino_description"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:textColor="@color/brown_dark"
-                android:gravity="center_horizontal"/>
+                style="@style/MainDescriptionStyle"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
+            <LinearLayout style="@style/LinLayImageButtonsStyle">
 
                 <Button
                     android:id="@+id/button_domino_one"
                     style="@style/imageButtonStyle"
-                    android:background="@drawable/domino_one"
-                    android:layout_margin="10dp"/>
+                    android:background="@drawable/domino_one"/>
 
                 <Button
                     android:id="@+id/button_domino_three"
                     style="@style/imageButtonStyle"
-                    android:background="@drawable/domino_three"
-                    android:layout_margin="10dp"/>
+                    android:background="@drawable/domino_three"/>
 
                 <Button
                     android:id="@+id/button_domino_seven"
                     style="@style/imageButtonStyle"
-                    android:background="@drawable/domino_seven"
-                    android:layout_margin="10dp"/>
+                    android:background="@drawable/domino_seven"/>
 
             </LinearLayout>
 

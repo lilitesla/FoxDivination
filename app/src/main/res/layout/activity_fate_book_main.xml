@@ -5,69 +5,35 @@
     tools:context="lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_gray_blue"
-        >
+        style="@style/ScrollViewStyle">
+
         <LinearLayout
             android:id="@+id/ll_fatebook_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            style="@style/MainLinearLayoutStyle">
 
             <ImageView
                 android:id="@+id/image_fatebook_main"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
                 android:background="@drawable/ekaterina_book"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_alignParentTop="true"/>
+                style="@style/mainImageStyle"/>
 
             <TextView
                 android:id="@+id/textview_fatebook_main_caption"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/fate_book_main_caption"
-                android:textSize="16sp"
-                android:textColor="@color/brown_dark"
-                android:layout_gravity="center"/>
+                style="@style/MainCaptionStyle"/>
 
             <TextView
                 android:id="@+id/textview_fatebook_main_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/fate_book_main_description"
-                android:textSize="16sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:textColor="@color/brown_dark"
-                android:gravity="center_horizontal"/>
-
-            <TextView
-                android:id="@+id/button_about_fatebook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/blue_dark"
-                android:text="@string/about_devination"
-                android:textSize="16sp"
-                android:layout_marginTop="15dp"/>
+                style="@style/MainDescriptionStyle"/>
 
         </LinearLayout>
 
         <Button
             android:id="@+id/button_fatebook_main_start"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
             android:text="@string/button_start"
-            android:textColor="@color/background_gray_blue"
-            android:background="@color/brown_medium"
             android:layout_above="@+id/button_fatebook_main_back"
-            android:layout_marginBottom="10dp"
             android:layout_centerHorizontal="true"
-            />
+            style="@style/showResultButtonStyle"/>
 
 
         <ImageButton

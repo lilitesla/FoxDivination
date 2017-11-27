@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/linearLayoutMainStyle"
+tools:context=".presentation.screen.jewish.kabbala.result.view.KabbalaResultActivity">
+
+<RelativeLayout
+    style="@style/ScrollViewStyle">
+
+    <ImageButton
+        android:id="@+id/button_kabbala_result_close"
+        style="@style/buttonCloseStyle"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_kabbala_result"
+        android:layout_below="@id/button_kabbala_result_close"
+        style="@style/MainLinearLayoutStyle">
+
+        <ImageView
+            android:id="@+id/image_kabbala_result"
+            android:background="@drawable/kabbala"
+            style="@style/mainImageStyle" />
+
+        <TextView
+            android:id="@+id/textview_kabbala_result_caption"
+            android:text="Фамилия Имя"
+            style="@style/MainCaptionStyle" />
+
+        <TextView
+            android:id="@+id/textview_kabbala_result_description"
+            android:text="1 - Алчность, счастливая жизнь \n 2 - расколы, несчастье "
+            style="@style/MainDescriptionStyle"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_kabbala_result_back"
+        style="@style/buttonBackStyle" />
+
+</RelativeLayout>
+
+</LinearLayout>
+

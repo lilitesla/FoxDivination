@@ -5,77 +5,49 @@
     tools:context="lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_gray_blue">
+        style="@style/ScrollViewStyle">
 
              <LinearLayout
-                android:id="@+id/llChina"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:id="@+id/ll_china"
+                style="@style/MainLinearLayoutStyle">
 
                 <ImageView
                     android:id="@+id/image_china"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
                     android:background="@drawable/china"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_alignParentTop="true"/>
+                    style="@style/mainImageStyle"/>
 
                 <TextView
                     android:id="@+id/textview_china_caption"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/china_caption"
-                    android:textSize="16sp"
-                    android:textColor="@color/brown_dark"
-                    android:layout_gravity="center"/>
+                    style="@style/MainCaptionStyle"/>
 
                 <TextView
                     android:id="@+id/textview_china_description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/china_description"
-                    android:textSize="16sp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:textColor="@color/brown_dark"
-                    android:gravity="center_horizontal"/>
+                    style="@style/MainDescriptionStyle"/>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:orientation="horizontal">
+                    style="@style/LinLayImageButtonsStyle">
 
                     <Button
                         android:id="@+id/button_fatebook"
                         style="@style/imageButtonStyle"
-                        android:background="@drawable/ekaterina_book"
-                        android:layout_margin="10dp"/>
+                        android:background="@drawable/ekaterina_book"/>
 
                     <Button
                         android:id="@+id/button_domino"
                         style="@style/imageButtonStyle"
-                        android:background="@drawable/domino"
-                        android:layout_margin="10dp"/>
+                        android:background="@drawable/domino"/>
 
                     <Button
                         style="@style/imageButtonStyle"
-                        android:background="@drawable/ekaterina_crown"
-                        android:layout_margin="10dp"/>
+                        android:background="@drawable/ekaterina_crown"/>
 
                 </LinearLayout>
 
                  <ImageButton
                      android:id="@+id/button_china_back"
-                     style="@style/buttonBackStyle" />/>
+                     style="@style/buttonBackStyle" />
 
             </LinearLayout>
 

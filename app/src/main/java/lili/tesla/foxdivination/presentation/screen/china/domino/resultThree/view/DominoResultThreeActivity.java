@@ -98,7 +98,7 @@ public class DominoResultThreeActivity extends BaseActivity implements DominoRes
 
     @OnClick (R.id.button_domino_result_three_close)
     void onButtonDominoResultThreeCloseClick() {
-        MainActivity.start(this);
+        mPresenter.showMainScreen();
     }
 
     @Override
@@ -107,5 +107,10 @@ public class DominoResultThreeActivity extends BaseActivity implements DominoRes
             descriptions[i].setText(dominoes[i].getDescription());
             images[i].setBackgroundResource(dominoes[i].getImageId());
         }
+    }
+
+    @Override
+    public void showMainScreen() {
+        MainActivity.start(this);
     }
 }

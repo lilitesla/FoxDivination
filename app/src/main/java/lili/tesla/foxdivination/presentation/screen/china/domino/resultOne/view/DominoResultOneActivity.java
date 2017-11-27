@@ -57,12 +57,17 @@ public class DominoResultOneActivity extends BaseActivity implements DominoResul
 
     @OnClick (R.id.button_domino_result_one_close)
     void onButtonDominoResultOneCloseClick() {
-        MainActivity.start(this);
+        mPresenter.showMainScreen();
     }
 
     @Override
     public void showResults(Domino[] dominoes) {
         mTextviewDominoResultOneDescription.setText(dominoes[0].getDescription());
         mImageDominoResultOne.setBackgroundResource(dominoes[0].getImageId());
+    }
+
+    @Override
+    public void showMainScreen() {
+        MainActivity.start(this);
     }
 }

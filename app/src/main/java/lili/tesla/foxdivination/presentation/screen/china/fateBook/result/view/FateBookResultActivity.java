@@ -28,7 +28,7 @@ import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class FateBookResultActivity extends BaseActivity implements FateBookResultView {
 
-    public static final String EXTRA_KEY_INDEX = "KEY_ID";
+    public static final String EXTRA_KEY_INDEX = "KEY_INDEX";
 
     public static void start(Context context, String indexPrediction) {
         Intent intent = new Intent(context, FateBookResultActivity.class);
@@ -98,8 +98,7 @@ public class FateBookResultActivity extends BaseActivity implements FateBookResu
 
     @OnClick(R.id.button_fatebook_result_close)
     void onButtonFatebookResultClose() {
-        MainActivity.start(this);
-        finish();
+        mPresenter.showMainScreen();
     }
 
     @Override
@@ -116,6 +115,11 @@ public class FateBookResultActivity extends BaseActivity implements FateBookResu
             }
         }
 
+    }
+
+    @Override
+    public void showMainScreen() {
+        MainActivity.start(this);
     }
 
 }

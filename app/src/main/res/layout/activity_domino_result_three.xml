@@ -5,26 +5,21 @@
     tools:context="lili.tesla.foxdivination.presentation.screen.china.domino.resultThree.view.DominoResultThreeActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/background_gray_blue">
+        style="@style/ScrollViewStyle">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/background_gray_blue">
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:id="@+id/button_domino_result_three_close"
-                style="@style/buttonCloseStyle" />
+                style="@style/buttonCloseStyle"
+                android:layout_margin="10dp"/>
 
                 <LinearLayout
                     android:id="@+id/ll_ekaterina_domino_result_three"
                     android:layout_below="@id/button_domino_result_three_close"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal">
+                    style="@style/LinearLayoutResultStyle">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -77,7 +72,7 @@
 
                     <TextView
                         android:id="@+id/textview_domino_result_three_caption_3"
-                        android:text="@string/perfect"
+                        android:text="@string/future"
                         style="@style/textViewDominoCaptionStyle" />
 
                     <TextView

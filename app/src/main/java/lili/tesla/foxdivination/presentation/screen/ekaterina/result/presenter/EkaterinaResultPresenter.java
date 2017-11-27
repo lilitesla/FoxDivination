@@ -24,4 +24,8 @@ public class EkaterinaResultPresenter extends BasePresenter<EkaterinaResultView>
         mView.showResults(ekaterina);
     }
 
+    public void showMainScreen() {
+        mView.showMainScreen();
+    }
+
 }

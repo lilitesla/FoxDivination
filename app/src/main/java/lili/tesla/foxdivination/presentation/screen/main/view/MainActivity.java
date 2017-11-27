@@ -12,6 +12,7 @@ import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity;
 import lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.EkaterinaMainActivity;
+import lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.view.JewishActivity;
 import lili.tesla.foxdivination.presentation.screen.main.presenter.MainPresenter;
 
 public class MainActivity extends BaseActivity implements MainView{
@@ -45,6 +46,9 @@ public class MainActivity extends BaseActivity implements MainView{
     @OnClick (R.id.main_button_ekaterina)
     void onMainButtonEkaterinaClick() { mPresenter.showEkaterinaScreen(); }
 
+    @OnClick (R.id.main_button_jewish)
+    void onMainButtonJewishClick() { mPresenter.showJewishScreen(); }
+
     @Override
     public void showChinaScreen() {
         ChinaActivity.start(this);
@@ -53,5 +57,10 @@ public class MainActivity extends BaseActivity implements MainView{
     @Override
     public void showEkaterinaScreen() {
         EkaterinaMainActivity.start(this);
+    }
+
+    @Override
+    public void showJewishScreen() {
+        JewishActivity.start(this);
     }
 }

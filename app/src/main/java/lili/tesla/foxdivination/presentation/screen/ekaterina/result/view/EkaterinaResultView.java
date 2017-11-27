@@ -9,4 +9,6 @@ import lili.tesla.foxdivination.data.Ekaterina;
 public interface EkaterinaResultView {
 
     void showResults(Ekaterina ekaterina);
+
+    void showMainScreen();
 }

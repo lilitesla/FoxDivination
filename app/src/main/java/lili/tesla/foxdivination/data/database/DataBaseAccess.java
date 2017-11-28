@@ -5,6 +5,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Region;
+import android.util.ArrayMap;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.data.Prediction;
@@ -84,7 +89,6 @@ public class DataBaseAccess {
     }
 
     // Domino
-
     public String getDominoDescription (int num) {
         open();
 
@@ -99,6 +103,62 @@ public class DataBaseAccess {
 
         close();
         return caption;
+    }
+
+    //Kabbala
+    public int getKabbalaAlphabetNum (String s) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = s;
+
+        Cursor cursor = database.rawQuery("SELECT value FROM kabbala_alphabet WHERE word = ?", str);
+        cursor.moveToFirst();
+
+        int result = cursor.getInt(0);
+
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+    public List<Integer> getKabbalaValueList() {
+        open();
+
+        String[] str = new String[0];
+        List<Integer> list = new ArrayList<>();
+
+        Cursor cursor = database.rawQuery("SELECT index_id FROM kabbala_answers ORDER BY index_id DESC", str);
+        cursor.moveToFirst();
+
+        if (cursor.getCount() > 0) {
+            list.add(cursor.getInt(0));
+            while (cursor.moveToNext()) {
+                list.add(cursor.getInt(0));
+            }
+        }
+
+        cursor.close();
+        close();
+
+        return list;
+    }
+
+    public String getKabbalaDescription(int num) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = num + "";
+
+        Cursor cursor = database.rawQuery("SELECT description FROM kabbala_answers WHERE index_id = ?", str);
+        cursor.moveToFirst();
+
+        String result = cursor.getString(0);
+        cursor.close();
+        close();
+
+        return result;
     }
 
 

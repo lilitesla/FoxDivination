@@ -3,7 +3,6 @@ package lili.tesla.foxdivination.presentation.screen.china.domino.resultOne.view
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,6 +10,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.data.Domino;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;

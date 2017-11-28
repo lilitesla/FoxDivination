@@ -3,14 +3,10 @@ package lili.tesla.foxdivination.presentation.screen.china.fateBook.result.view;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -19,10 +15,7 @@ import butterknife.OnClick;
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.data.Prediction;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
-import lili.tesla.foxdivination.presentation.screen.china.fateBook.devination.view.FateBookDevinationActivity;
-import lili.tesla.foxdivination.presentation.screen.china.fateBook.main.presenter.FateBookMainPresenter;
 import lili.tesla.foxdivination.presentation.screen.china.fateBook.result.presenter.FateBookResultPresenter;
-import lili.tesla.foxdivination.presentation.screen.china.fateBook.result.view.FateBookResultView;
 import lili.tesla.foxdivination.presentation.screen.main.view.MainActivity;
 import lili.tesla.foxdivination.presentation.util.Utils;
 

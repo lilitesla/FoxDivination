@@ -6,7 +6,6 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -63,7 +62,7 @@ public class KabbalaResultActivity extends BaseActivity implements KabbalaResult
         mPresenter.showMainScreen();
     }
 
-    @OnClick (R.id.button_kabbala_main_back)
+    @OnClick (R.id.button_kabbala_result_back)
     void onButtonKabbalaMainBack() {
         finish();
     }

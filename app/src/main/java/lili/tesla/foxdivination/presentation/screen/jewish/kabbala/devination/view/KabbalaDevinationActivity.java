@@ -58,6 +58,11 @@ public class KabbalaDevinationActivity extends BaseActivity implements KabbalaDe
         Utils.setTypefaceLite(mTextviewKabbalaDevinationDescription);
     }
 
+    @OnClick (R.id.button_kabbala_devination_back)
+    void onButtonKabbalaDevinationBack(){
+        finish();
+    }
+
     @OnClick (R.id.button_kabbala_devination_calc)
     void onButtonKabbalaDevinationCalc() {
         String sFio = mEdittextKabbalaDevinationFio.getText().toString();
@@ -67,12 +72,14 @@ public class KabbalaDevinationActivity extends BaseActivity implements KabbalaDe
     @OnClick (R.id.button_kabbala_devination_show_result)
     void onButtonKabbalaShowResult() {
         mPresenter.showResultScreen();
+        finish();
     }
 
     @Override
     public void showCalculate(String sResult) {
        // mButtonKabbalaDevinationCalc.setVisibility(View.GONE);
         mButtonKabbalaDevinationShowResult.setVisibility(View.VISIBLE);
+        mTextviewKabbalaDevinationDescription.setText(sResult);
     }
 
     @Override

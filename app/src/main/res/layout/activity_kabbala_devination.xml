@@ -30,11 +30,12 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName"
+                android:hint="Фамилия Имя"/>
 
             <TextView
                 android:id="@+id/textview_kabbala_devination_description"
-                android:text="1 + 1 + 10 + 15 = 27"
+                android:text=""
                 style="@style/MainDescriptionStyle"
                 android:layout_gravity="center"/>
 
@@ -43,12 +44,12 @@
         <Button
             android:id="@+id/button_kabbala_devination_calc"
             android:text="@string/button_calculate"
-            android:layout_above="@+id/button_kabbala_devination_back"
+            android:layout_above="@+id/button_kabbala_devination_show_result"
             android:layout_centerHorizontal="true"
             style="@style/showResultButtonStyle"/>
 
         <Button
-            android:id="@+id/button_kabbala_devination_show_result"
+            android:id="@id/button_kabbala_devination_show_result"
             android:text="@string/button_show_results"
             android:layout_above="@+id/button_kabbala_devination_back"
             android:layout_centerHorizontal="true"

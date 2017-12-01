@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/linearLayoutMainStyle"
+tools:context="lili.tesla.foxdivination.presentation.screen.africa.main.view.AfricaMainActivity">
+
+<ScrollView
+    style="@style/ScrollViewStyle">
+
+    <LinearLayout
+        android:id="@+id/ll_africa"
+        style="@style/MainLinearLayoutStyle">
+
+        <ImageView
+            android:id="@+id/image_africa"
+            android:background="@drawable/africa"
+            style="@style/mainImageStyle"/>
+
+        <TextView
+            android:id="@+id/textview_africa_caption"
+            android:text="@string/africa_caption"
+            style="@style/MainCaptionStyle"/>
+
+        <TextView
+            android:id="@+id/textview_africa_description"
+            android:text="@string/africa_description"
+            style="@style/MainDescriptionStyle"/>
+
+        <LinearLayout
+            style="@style/LinLayImageButtonsStyle"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/main_ll_coffee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_coffee"
+                    style="@style/imageButtonStyle"
+                    android:layout_gravity="center"
+                    android:background="@drawable/coffee"/>
+                <TextView
+                    android:id="@+id/textview_main_coffee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_africa_back"
+            style="@style/buttonBackStyle" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+

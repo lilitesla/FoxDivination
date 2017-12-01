@@ -15,29 +15,71 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="130dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/main_button_china"
-                android:background="@drawable/china"
-                style="@style/imageMainButtonStyle"
-                />
+            <LinearLayout
+                android:id="@+id/main_ll_china"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_china"
+                    android:background="@drawable/china"
+                    style="@style/imageMainButtonStyle"/>
+                <TextView
+                    android:id="@+id/textview_main_china"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/china_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/main_button_ekaterina"
-                android:background="@drawable/ekaterina2"
-                style="@style/imageMainButtonStyle"/>
+            <LinearLayout
+                android:id="@+id/main_ll_ekaterina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_ekaterina"
+                    android:background="@drawable/ekaterina2"
+                    style="@style/imageMainButtonStyle"/>
+                <TextView
+                    android:id="@+id/textview_main_ekaterina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ekaterina_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/main_button_jewish"
-                android:background="@drawable/kabbala"
-                style="@style/imageMainButtonStyle"/>
+            <LinearLayout
+                android:id="@+id/main_ll_jewish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_jewish"
+                    android:background="@drawable/kabbala"
+                    style="@style/imageMainButtonStyle"/>
+                <TextView
+                    android:id="@+id/textview_main_jewish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jewish_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="250dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -46,13 +88,58 @@
                 android:orientation="vertical"
                 android:layout_weight="2">
 
-                <ImageButton
-                    android:background="@drawable/ekaterina_bow"
-                    style="@style/imageMainButtonStyle"/>
+                <LinearLayout
+                    android:id="@+id/main_ll_zodiak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <ImageButton
-                    android:background="@drawable/ekaterina_skull"
-                    style="@style/imageMainButtonStyle"/>
+                    <RelativeLayout
+                        style="@style/imageMainButtonStyle"
+                        android:id="@+id/main_rl_zodiak_image">
+
+                        <ImageButton
+                            android:id="@+id/main_zodiak_image_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/zodiac_background"/>
+                        <ImageButton
+                            android:id="@+id/main_image_zodiak"
+                            android:background="@drawable/zodiac_fish"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_zodiak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zodiak"
+                        android:textSize="11sp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_ll_africa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/main_button_africa"
+                        android:background="@drawable/africa"
+                        style="@style/imageMainButtonStyle"/>
+                    <TextView
+                        android:id="@+id/textview_main_africa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/africa_caption"
+                        android:textSize="11sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
 
             </LinearLayout>
 

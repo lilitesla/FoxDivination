@@ -31,9 +31,9 @@
         <activity android:name=".presentation.screen.jewish.kabbala.main.view.KabbalaMainActivity" />
         <activity android:name=".presentation.screen.jewish.kabbala.result.view.KabbalaResultActivity" />
         <activity android:name=".presentation.screen.jewish.mainJewish.view.JewishActivity" />
-        <activity android:name=".presentation.screen.jewish.question.devination.view.JewishQuestionDevinationActivity" />
-        <activity android:name=".presentation.screen.jewish.question.main.view.JewishQuestionMainActivity" />
-        <activity android:name=".presentation.screen.jewish.question.result.view.JewishQuestionResultActivity"></activity>
+        <activity android:name=".presentation.screen.africa.main.view.AfricaMainActivity" />
+        <activity android:name=".presentation.screen.africa.coffee.result.view.CoffeeResultActivity" />
+        <activity android:name=".presentation.screen.africa.coffee.main.view.CoffeeMainActivity"></activity>
     </application>
 
 </manifest>

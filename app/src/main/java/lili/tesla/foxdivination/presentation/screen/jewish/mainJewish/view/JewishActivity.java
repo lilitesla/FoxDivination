@@ -14,7 +14,6 @@ import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.jewish.kabbala.main.view.KabbalaMainActivity;
 import lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.presenter.JewishPresenter;
-import lili.tesla.foxdivination.presentation.screen.jewish.question.main.view.JewishQuestionMainActivity;
 import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class JewishActivity extends BaseActivity implements JewishView {
@@ -53,20 +52,21 @@ public class JewishActivity extends BaseActivity implements JewishView {
         finish();
     }
 
-    @OnClick (R.id.button_jewish_question)
-    void onButtonJewishQuestionClick() {
-        mPresenter.showJewishQuestionScreen();
-    }
-
-    @OnClick (R.id.button_kabbala)
+    @OnClick (R.id.main_button_kabbala)
     void onButtonKabbalaClick() {
         mPresenter.showKabbalaScreen();
     }
 
-    @Override
-    public void showJewishQuestionScreen() {
-        JewishQuestionMainActivity.start(this);
+    @OnClick (R.id.main_ll_kabbala)
+    void onLlKabbalaClick() {
+        mPresenter.showKabbalaScreen();
     }
+
+    @OnClick (R.id.textview_main_kabbala)
+    void onTvKabbalaClick() {
+        mPresenter.showKabbalaScreen();
+    }
+
 
     @Override
     public void showKabbalaScreen() {

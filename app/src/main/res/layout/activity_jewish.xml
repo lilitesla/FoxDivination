@@ -27,19 +27,31 @@
                 style="@style/MainDescriptionStyle"/>
 
             <LinearLayout
-                style="@style/LinLayImageButtonsStyle">
+                style="@style/LinLayImageButtonsStyle"
+                android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/button_kabbala"
-                    style="@style/imageButtonStyle"
-                    android:background="@drawable/kabbala"
-                    android:text="Каббала"/>
 
-                <Button
-                    android:id="@+id/button_jewish_question"
-                    style="@style/imageButtonStyle"
-                    android:background="@drawable/kabbala"
-                    android:text="Ответ на вопрос"/>
+                <LinearLayout
+                    android:id="@+id/main_ll_kabbala"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/main_button_kabbala"
+                        style="@style/imageButtonStyle"
+                        android:layout_gravity="center"
+                        android:background="@drawable/kabbala"/>
+                    <TextView
+                        android:id="@+id/textview_main_kabbala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Каббала"
+                        android:textSize="11sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+
 
             </LinearLayout>
 

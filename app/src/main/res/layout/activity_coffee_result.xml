@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/linearLayoutMainStyle"
+tools:context="lili.tesla.foxdivination.presentation.screen.africa.coffee.result.view.CoffeeResultActivity">
+
+<RelativeLayout
+    style="@style/ScrollViewStyle">
+
+    <ImageButton
+        android:id="@+id/button_coffee_result_close"
+        style="@style/buttonCloseStyle"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_coffee_result"
+        style="@style/LinearLayoutResultStyle"
+        android:layout_below="@id/button_coffee_result_close">
+
+        <LinearLayout style="@style/LinLayImageButtonsCoffeeStyle">
+
+            <ImageView
+                android:id="@+id/image_coffee_result_1"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_2"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_3"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_4"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinLayImageButtonsCoffeeStyle">
+
+            <ImageView
+                android:id="@+id/image_coffee_result_5"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_6"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_7"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_8"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinLayImageButtonsCoffeeStyle">
+
+            <ImageView
+                android:id="@+id/image_coffee_result_9"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_10"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_11"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_12"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinLayImageButtonsCoffeeStyle"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/image_coffee_result_13"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_14"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_15"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+
+            <ImageView
+                android:id="@+id/image_coffee_result_16"
+                style="@style/imageButtonCoffeeStyle"
+                android:background="@drawable/coffee_front"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textview_coffee_result_caption"
+            android:text="название"
+            style="@style/MainCaptionStyle"/>
+
+        <TextView
+            android:id="@+id/textview_coffee_result_description"
+            android:text="результаты"
+            style="@style/MainDescriptionStyle"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_coffee_result_back"
+        style="@style/buttonBackStyle" />
+
+
+</RelativeLayout>
+
+</LinearLayout>

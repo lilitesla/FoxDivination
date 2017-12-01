@@ -8,4 +8,5 @@ public interface MainView {
     void showChinaScreen();
     void showEkaterinaScreen();
     void showJewishScreen();
+    void showAfricaScreen();
 }

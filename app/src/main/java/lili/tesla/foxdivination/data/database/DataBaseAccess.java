@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import lili.tesla.foxdivination.data.Coffee;
 import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.data.Prediction;
 
@@ -161,6 +162,21 @@ public class DataBaseAccess {
         return result;
     }
 
+    //Coffee
+    public Coffee getCoffee(int count) {
+        open();
 
+        String[] str = new String[1];
+        str[0] = count + "";
+
+        Cursor cursor = database.rawQuery("SELECT caption, description FROM coffee WHERE id = ?", str);
+        cursor.moveToFirst();
+
+        Coffee result = new Coffee(count, cursor.getString(0), cursor.getString(1));
+        cursor.close();
+        close();
+
+        return result;
+    }
 
 }

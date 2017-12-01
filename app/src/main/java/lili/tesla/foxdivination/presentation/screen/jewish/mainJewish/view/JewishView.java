@@ -6,7 +6,6 @@ package lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.view;
 
 public interface JewishView {
 
-    void showJewishQuestionScreen();
     void showKabbalaScreen();
 
 }

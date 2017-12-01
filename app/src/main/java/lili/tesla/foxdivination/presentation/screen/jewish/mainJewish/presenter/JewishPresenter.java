@@ -9,10 +9,6 @@ import lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.view.Jewis
 
 public class JewishPresenter extends BasePresenter<JewishView> {
 
-    public void showJewishQuestionScreen() {
-        mView.showJewishQuestionScreen();
-    }
-
     public void showKabbalaScreen() {
         mView.showKabbalaScreen();
     }

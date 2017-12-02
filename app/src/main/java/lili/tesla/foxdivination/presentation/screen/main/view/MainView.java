@@ -9,4 +9,5 @@ public interface MainView {
     void showEkaterinaScreen();
     void showJewishScreen();
     void showAfricaScreen();
+    void showZodiakScreen();
 }

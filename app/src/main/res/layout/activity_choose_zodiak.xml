@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.zodiak.chooseZodiak.view.ChooseZodiakActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_choose_zodiak"
+            style="@style/MainLinearLayoutStyle">
+
+            <TextView
+                android:id="@+id/textview_choose_zodiak_caption"
+                android:text="@string/choose_zodiak"
+                style="@style/MainCaptionStyle"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout style="@style/ZodiakMainLLStyle">
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_aries"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle"
+                        android:elevation="0dp">
+
+                        <Button
+                            android:id="@+id/button_main_aries_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/button_main_aries"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_aries"
+                            android:layout_gravity="center"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_aries"
+                        android:text="@string/zodiak_aries"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_taurus"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_taurus_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_taurus"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_taurus"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_taurus"
+                        android:text="@string/zodiak_taurus"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_twins"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_twins_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_twins"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_twins"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_twins"
+                        android:text="@string/zodiak_twins"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ZodiakMainLLStyle">
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_cancer"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_cancer_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_cancer"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_cancer"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_cancer"
+                        android:text="@string/zodiak_cancer"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_lion"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_lion_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_lion"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_lion"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_lion"
+                        android:text="@string/zodiak_lion"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_virgo"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_virgo_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_virgo"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_virgo"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_virgo"
+                        android:text="@string/zodiak_virgo"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ZodiakMainLLStyle">
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_libra"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_libra_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_libra"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_libra"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_libra"
+                        android:text="@string/zodiak_libra"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_scorpio"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_scorpio_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_scorpio"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_scorpio"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_scorpio"
+                        android:text="@string/zodiak_scorpio"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_sagittarius"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_sagittarius_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_sagittarius"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_sagittarius"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_sagittarius"
+                        android:text="@string/zodiak_sagittarius"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ZodiakMainLLStyle">
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_capricorn"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_capricorn_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_capricorn"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_capricorn"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_capricorn"
+                        android:text="@string/zodiak_capricorn"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_aquarius"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_aquarius_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_aquarius"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_aquarius"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_aquarius"
+                        android:text="@string/zodiak_aquarius"
+                        style="@style/ZodiakTvStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zodiak_fish"
+                    style="@style/ZodiakLLStyle">
+
+                    <RelativeLayout style="@style/ZodiakRLStyle">
+
+                        <Button
+                            android:id="@+id/button_main_fish_background"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_background"/>
+
+                        <Button
+                            android:id="@+id/button_main_fish"
+                            style="@style/imageButtonStyleZodiak"
+                            android:background="@drawable/zodiac_fish"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_main_fish"
+                        android:text="@string/zodiak_fish"
+                        style="@style/ZodiakTvStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/button_choose_zodiak_back"
+                style="@style/buttonBackStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -17,6 +17,7 @@ import lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaAc
 import lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.EkaterinaMainActivity;
 import lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.view.JewishActivity;
 import lili.tesla.foxdivination.presentation.screen.main.presenter.MainPresenter;
+import lili.tesla.foxdivination.presentation.screen.zodiak.main.view.ZodiakActivity;
 import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class MainActivity extends BaseActivity implements MainView{
@@ -98,6 +99,19 @@ public class MainActivity extends BaseActivity implements MainView{
     @OnClick (R.id.textview_main_africa)
     void onMainTextViewAfricaClick() { mPresenter.showAfricaScreen(); }
 
+    @OnClick (R.id.main_ll_zodiak)
+    void onMainLlZodiakClick() { mPresenter.showZodiakScreen(); }
+
+    @OnClick (R.id.main_image_zodiak)
+    void onMainButtonZodiakClick() { mPresenter.showZodiakScreen(); }
+
+    @OnClick (R.id.main_zodiak_image_background)
+    void onMainButtonZodiakBackgroundClick() { mPresenter.showZodiakScreen(); }
+
+    @OnClick (R.id.textview_main_zodiak)
+    void onMainTextViewZodiakClick() { mPresenter.showZodiakScreen(); }
+
+
     @Override
     public void showChinaScreen() {
         ChinaActivity.start(this);
@@ -116,6 +130,11 @@ public class MainActivity extends BaseActivity implements MainView{
     @Override
     public void showAfricaScreen() {
         AfricaMainActivity.start(this);
+    }
+
+    @Override
+    public void showZodiakScreen() {
+        ZodiakActivity.start(this);
     }
 
 

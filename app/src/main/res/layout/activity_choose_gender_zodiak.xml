@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity">
+
+<ScrollView
+    style="@style/ScrollViewStyle">
+
+    <LinearLayout
+        android:id="@+id/ll_choose_zodiak_gender"
+        style="@style/MainLinearLayoutStyle"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textview_choose_zodiak_gender_caption"
+            android:text="@string/choose_gender"
+            style="@style/MainCaptionStyle"
+            android:layout_marginTop="15dp"/>
+
+        <ImageButton
+            android:id="@+id/image_choose_zodiak_gender_woman"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:background="@drawable/ekaterina_woman"
+            android:layout_margin="20dp"/>
+
+        <ImageButton
+            android:id="@+id/image_choose_zodiak_gender_man"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:background="@drawable/ekaterina_man"/>
+
+        <ImageButton
+            android:id="@+id/button_choose_zodiak_gender_back"
+            android:layout_marginTop="10dp"
+            style="@style/buttonBackStyle" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+</LinearLayout>

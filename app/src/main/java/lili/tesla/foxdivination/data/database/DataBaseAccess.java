@@ -14,6 +14,7 @@ import java.util.Map;
 import lili.tesla.foxdivination.data.Coffee;
 import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.data.Prediction;
+import lili.tesla.foxdivination.data.Zodiac;
 
 /**
  * Created by Лилия on 24.11.2017.
@@ -173,6 +174,41 @@ public class DataBaseAccess {
         cursor.moveToFirst();
 
         Coffee result = new Coffee(count, cursor.getString(0), cursor.getString(1));
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+    //Zodiac
+    public Zodiac getMainZodiac(int gender, int zodiakId) {
+        open();
+
+        String[] str = new String[2];
+        str[0] = gender + "";
+        str[1] = zodiakId + "";
+
+        Cursor cursor = database.rawQuery("SELECT zodiak, main FROM zodiak_main WHERE gender = ? and zodiakId = ?", str);
+        cursor.moveToFirst();
+
+        Zodiac result = new Zodiac(gender, zodiakId, cursor.getString(0), cursor.getString(1));
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+    public Zodiac getLoveZodiac(int gender, int zodiakId) {
+        open();
+
+        String[] str = new String[2];
+        str[0] = gender + "";
+        str[1] = zodiakId + "";
+
+        Cursor cursor = database.rawQuery("SELECT zodiak, love FROM zodiak_main WHERE gender = ? and zodiakId = ?", str);
+        cursor.moveToFirst();
+
+        Zodiac result = new Zodiac(gender, zodiakId, cursor.getString(0), cursor.getString(1));
         cursor.close();
         close();
 

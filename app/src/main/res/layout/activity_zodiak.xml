@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/linearLayoutMainStyle"
+tools:context="lili.tesla.foxdivination.presentation.screen.zodiak.main.view.ZodiakActivity">
+
+<RelativeLayout
+    style="@style/ScrollViewStyle">
+
+    <LinearLayout
+        android:id="@+id/ll_china"
+        style="@style/MainLinearLayoutStyle">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/zodiac_background"/>
+            <ImageButton
+                android:background="@drawable/zodiac_fish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview_zodiak_caption"
+            android:text="@string/zodiak_caption"
+            style="@style/MainCaptionStyle"/>
+
+        <TextView
+            android:id="@+id/textview_zodiak_description"
+            android:text="@string/zodiak_description"
+            style="@style/MainDescriptionStyle"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_zodiak_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/button_main_zodiak"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/zodiak_main"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/textview_main_zodiak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_zodiak"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zodiak_love"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/button_zodiak_love"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/zodiak_love"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/textview_zodiak_love"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/love_zodiak"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zodiak_compatibility"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/button_zodiak_compatibility"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/zodiak_compatibility"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/textview_zodiak_compatibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compatibility_zodiak"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_zodiak_back"
+        style="@style/buttonBackStyle" />
+
+</RelativeLayout>
+
+</LinearLayout>

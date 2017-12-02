@@ -19,5 +19,7 @@ public class MainPresenter extends BasePresenter<MainView> {
 
     public void showAfricaScreen() { mView.showAfricaScreen(); }
 
+    public void showZodiakScreen() { mView.showZodiakScreen(); }
+
 
 }

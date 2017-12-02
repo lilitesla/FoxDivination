@@ -33,7 +33,11 @@
         <activity android:name=".presentation.screen.jewish.mainJewish.view.JewishActivity" />
         <activity android:name=".presentation.screen.africa.main.view.AfricaMainActivity" />
         <activity android:name=".presentation.screen.africa.coffee.result.view.CoffeeResultActivity" />
-        <activity android:name=".presentation.screen.africa.coffee.main.view.CoffeeMainActivity"></activity>
+        <activity android:name=".presentation.screen.africa.coffee.main.view.CoffeeMainActivity" />
+        <activity android:name=".presentation.screen.zodiak.main.view.ZodiakActivity" />
+        <activity android:name=".presentation.screen.zodiak.chooseZodiak.view.ChooseZodiakActivity" />
+        <activity android:name=".presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity" />
+        <activity android:name=".presentation.screen.zodiak.mainZodiak.view.MainZodiakActivity"></activity>
     </application>
 
 </manifest>

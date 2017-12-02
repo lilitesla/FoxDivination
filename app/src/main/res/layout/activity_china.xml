@@ -27,23 +27,23 @@
                     style="@style/MainDescriptionStyle"/>
 
                 <LinearLayout
-                    style="@style/LinLayImageButtonsStyle">
+                 style="@style/LinLayImageButtonsStyle">
 
-                    <Button
-                        android:id="@+id/button_fatebook"
-                        style="@style/imageButtonStyle"
-                        android:background="@drawable/ekaterina_book"/>
+                 <Button
+                     android:id="@+id/button_fatebook"
+                     style="@style/imageButtonStyle"
+                     android:background="@drawable/ekaterina_book"/>
 
-                    <Button
-                        android:id="@+id/button_domino"
-                        style="@style/imageButtonStyle"
-                        android:background="@drawable/domino"/>
+                 <Button
+                     android:id="@+id/button_domino"
+                     style="@style/imageButtonStyle"
+                     android:background="@drawable/domino"/>
 
-                    <Button
-                        style="@style/imageButtonStyle"
-                        android:background="@drawable/ekaterina_crown"/>
+                 <Button
+                     style="@style/imageButtonStyle"
+                     android:background="@drawable/ekaterina_crown"/>
 
-                </LinearLayout>
+             </LinearLayout>
 
                  <ImageButton
                      android:id="@+id/button_china_back"

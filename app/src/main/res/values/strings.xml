@@ -72,6 +72,47 @@
         и смотрят сколько из них упали ложбинкой вверх. Сосредоточьтесь на проблеме, которая вас интересует и нажмите на кнопку \"Получить предсказание\".</string>
 
     <string name="zodiak">По Знаку Зодиака</string>
+    <string name="zodiak_caption">Гороскоп по Знаку Зодиака</string>
+    <string name="zodiak_description">В Индии существует традиция: перед вступлением в брак жених и невеста заказывают свой гороскоп совместимости у астролога.
+        При этом неблагоприятное сочетание знаков зодиака способно даже разрушить свадьбу: заключение астролога является чуть ли не официальным разрешением на брак!</string>
+
+    <string name="main_zodiak">Общий гороскоп</string>
+    <string name="love_zodiak">Любовный гороскоп</string>
+    <string name="compatibility_zodiak">Гороскоп совместимости</string>
+
+    <string name="choose_zodiak">Выберите знак зодиака</string>
+    <string name="choose_gender">Выберите пол</string>
+
+    <string name="zodiak_aries">Овен</string>
+    <string name="zodiak_taurus">Телец</string>
+    <string name="zodiak_twins">Близнецы</string>
+    <string name="zodiak_cancer">Рак</string>
+    <string name="zodiak_lion">Лев</string>
+    <string name="zodiak_virgo">Дева</string>
+    <string name="zodiak_libra">Весы</string>
+    <string name="zodiak_scorpio">Скорпион</string>
+    <string name="zodiak_sagittarius">Стрелец</string>
+    <string name="zodiak_capricorn">Козерог</string>
+    <string name="zodiak_aquarius">Водолей</string>
+    <string name="zodiak_fish">Рыбы</string>
+
+    <string name="gender_woman">Женщина - </string>
+    <string name="gender_man">Мужчина - </string>
+
+    <array name="zodiak">
+        <item>Овен</item>
+        <item>Телец</item>
+        <item>Близнецы</item>
+        <item>Рак</item>
+        <item>Лев</item>
+        <item>Дева</item>
+        <item>Весы</item>
+        <item>Скорпион</item>
+        <item>Стрелец</item>
+        <item>Козерог</item>
+        <item>Водолей</item>
+        <item>Рыбы</item>
+    </array>
 
     <string name="past">Прошлое</string>
     <string name="present">Настоящее</string>

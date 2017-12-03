@@ -4,24 +4,26 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.presenter.ChooseGenderZodiakPresenter;
 import lili.tesla.foxdivination.presentation.screen.zodiak.mainZodiak.view.MainZodiakActivity;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class ChooseGenderZodiakActivity extends BaseActivity implements ChooseGenderZodiakView {
 
-    public static final String EXTRA_KEY_ZODIAC = "KEY_ZODIAC";
     public static final String EXTRA_KEY_PRED = "KEY_PRED";
 
-
-    public static void start(Context context, int pred, int zodiakId) {
+    public static void start(Context context, int pred) {
         Intent intent = new Intent(context, ChooseGenderZodiakActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putInt( EXTRA_KEY_ZODIAC, zodiakId);
         bundle.putInt( EXTRA_KEY_PRED, pred);
 
         intent.putExtras(bundle);
@@ -29,8 +31,22 @@ public class ChooseGenderZodiakActivity extends BaseActivity implements ChooseGe
     }
 
     private ChooseGenderZodiakPresenter mPresenter;
-    private int mZodiakId;
     private int mPred;
+
+    @BindView(R.id.textview_choose_gender_caption)
+    TextView mTvChooseGenderCaption;
+
+    @BindView(R.id.textview_choose_zodiak_caption)
+    TextView mTvChooseZodiakCaption;
+
+    @BindView(R.id.spinner_zodiak_gender)
+    Spinner mSpinnerGender;
+
+    @BindView(R.id.spinner_zodiak)
+    Spinner mSpinnerZodiak;
+
+    @BindView(R.id.image_zodiak_choose)
+    ImageView mImageZodiak;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,30 +58,35 @@ public class ChooseGenderZodiakActivity extends BaseActivity implements ChooseGe
         mPresenter = new ChooseGenderZodiakPresenter();
         mPresenter.setView(this);
 
-        mZodiakId = getIntent().getIntExtra(EXTRA_KEY_ZODIAC, 0);
         mPred = getIntent().getIntExtra(EXTRA_KEY_PRED, 0);
+
+        Utils.setTypefaceBold(mTvChooseGenderCaption);
+        Utils.setTypefaceBold(mTvChooseZodiakCaption);
+
+        if (mPred == 0) {
+            mImageZodiak.setBackgroundResource(R.drawable.zodiak_main);
+        } else {
+            mImageZodiak.setBackgroundResource(R.drawable.zodiak_love);
+        }
+
     }
 
     @OnClick(R.id.button_choose_zodiak_gender_back)
-    void onButtonChooseGenderBackClick() {
+    void onBackClick() {
         finish();
     }
 
-    @OnClick (R.id.image_choose_zodiak_gender_woman)
-    void onButtonWomanClick() {
-        mPresenter.showZodiakResult(mPred, 0);
-        finish();
-    }
-
-    @OnClick (R.id.image_choose_zodiak_gender_man)
-    void onButtonManClick() {
-        mPresenter.showZodiakResult(mPred, 1);
-        finish();
+    @OnClick(R.id.button_choose_zodiak_gender_start)
+    void onStartClick() {
+        mPresenter.showZodiakResult();
     }
 
     @Override
-    public void showMainZodiakScreen(int gender, int pred) {
-        MainZodiakActivity.start(this, gender, mZodiakId, pred);
+    public void showMainZodiakScreen() {
+        int gender = mSpinnerGender.getSelectedItemPosition();
+        int zodiakId = mSpinnerZodiak.getSelectedItemPosition() + 1;
+        MainZodiakActivity.start(this, gender, zodiakId, mPred);
+        finish();
     }
 
 }

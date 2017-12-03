@@ -51,12 +51,12 @@ public class DominoResultOneActivity extends BaseActivity implements DominoResul
     }
 
     @OnClick (R.id.button_domino_result_one_back)
-    void onButtonDominoResultOneBackClick() {
+    void onBackClick() {
         finish();
     }
 
     @OnClick (R.id.button_domino_result_one_close)
-    void onButtonDominoResultOneCloseClick() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 

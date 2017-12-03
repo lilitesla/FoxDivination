@@ -47,7 +47,7 @@ public class KabbalaMainActivity extends BaseActivity implements KabbalaMainView
     }
 
     @OnClick (R.id.button_kabbala_main_back)
-    void onButtonKabbalaMainBackClick() {
+    void onBackClick() {
         finish();
     }
 

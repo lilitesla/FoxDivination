@@ -57,7 +57,7 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
     void onButtonDominoClick() { mPresenter.showDominoScreen(); }
 
     @OnClick (R.id.button_china_back)
-    void onButtonChinaBackClick() {
+    void onBackClick() {
         mPresenter.showMainScreen();
     }
 

@@ -82,6 +82,10 @@
 
     <string name="choose_zodiak">Выберите знак зодиака</string>
     <string name="choose_gender">Выберите пол</string>
+    <string name="choose_zodiak_man">Выберите знак зодиака мужчины</string>
+    <string name="choose_zodiak_woman">Выберите знак зодиака женщины</string>
+    <string name="compatibility">Совместимость</string>
+    <string name="button_show_goroskop">Получить гороскоп</string>
 
     <string name="zodiak_aries">Овен</string>
     <string name="zodiak_taurus">Телец</string>
@@ -99,7 +103,7 @@
     <string name="gender_woman">Женщина</string>
     <string name="gender_man">Мужчина</string>
 
-    <array name="zodiak">
+    <string-array name="zodiak">
         <item>Овен</item>
         <item>Телец</item>
         <item>Близнецы</item>
@@ -112,7 +116,12 @@
         <item>Козерог</item>
         <item>Водолей</item>
         <item>Рыбы</item>
-    </array>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Женщина</item>
+        <item>Мужчина</item>
+    </string-array>
 
     <string name="past">Прошлое</string>
     <string name="present">Настоящее</string>

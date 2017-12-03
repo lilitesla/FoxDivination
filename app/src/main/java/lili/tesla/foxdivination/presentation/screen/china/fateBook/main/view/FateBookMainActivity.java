@@ -53,7 +53,7 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
     }
 
     @OnClick (R.id.button_fatebook_main_back)
-    void onButtonFateBookMainBackClick() {
+    void onBackClick() {
         mPresenter.showChinaScreen();
     }
 

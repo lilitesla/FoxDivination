@@ -92,12 +92,12 @@ public class DominoResultThreeActivity extends BaseActivity implements DominoRes
     }
 
     @OnClick(R.id.button_domino_result_three_back)
-    void onButtonDominoResultThreeBackClick() {
+    void onBackClick() {
         finish();
     }
 
     @OnClick (R.id.button_domino_result_three_close)
-    void onButtonDominoResultThreeCloseClick() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 

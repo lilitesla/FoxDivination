@@ -27,10 +27,10 @@ public class CoffeeMainActivity extends BaseActivity implements CoffeeMainView {
     private CoffeeMainPresenter mPresenter;
 
     @BindView(R.id.textview_coffee_main_caption)
-    TextView mTextViewCoffeeMainCaption;
+    TextView mTextViewCaption;
 
     @BindView(R.id.textview_coffee_main_description)
-    TextView mTextViewCoffeeMainDescription;
+    TextView mTextViewDescription;
 
 
     @Override
@@ -43,17 +43,17 @@ public class CoffeeMainActivity extends BaseActivity implements CoffeeMainView {
         mPresenter = new CoffeeMainPresenter();
         mPresenter.setView(this);
 
-        Utils.setTypefaceBold(mTextViewCoffeeMainCaption);
-        Utils.setTypefaceLite(mTextViewCoffeeMainDescription);
+        Utils.setTypefaceBold(mTextViewCaption);
+        Utils.setTypefaceLite(mTextViewDescription);
     }
 
     @OnClick (R.id.button_coffee_main_back)
-    void onButtonCoffeeMainBackClick() {
+    void onBackClick() {
         finish();
     }
 
     @OnClick (R.id.button_coffee_main_start)
-    void onButtonCoffeeMainStart() {
+    void onStartClick() {
         mPresenter.showResultScreen();
     }
 

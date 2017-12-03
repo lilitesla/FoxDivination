@@ -15,6 +15,7 @@ import lili.tesla.foxdivination.data.Coffee;
 import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.data.Prediction;
 import lili.tesla.foxdivination.data.Zodiac;
+import lili.tesla.foxdivination.data.ZodiacCompatibility;
 
 /**
  * Created by Лилия on 24.11.2017.
@@ -209,6 +210,27 @@ public class DataBaseAccess {
         cursor.moveToFirst();
 
         Zodiac result = new Zodiac(gender, zodiakId, cursor.getString(0), cursor.getString(1));
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+    public ZodiacCompatibility getZodiacCompatibility(int manZodiacId, int womanZodiacId) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = manZodiacId + " " + womanZodiacId;
+
+        Cursor cursor = database.rawQuery("SELECT male, female, percent, marriage_caption, marriage, luck_caption, luck, sex_caption, sex," +
+                "money_caption, money, childrens_caption, childrens FROM zodiak_compatibility WHERE zodiakId = ?", str);
+        cursor.moveToFirst();
+
+        ZodiacCompatibility result = new ZodiacCompatibility(manZodiacId, womanZodiacId, cursor.getString(0), cursor.getString(1),
+                cursor.getInt(2), cursor.getString(3), cursor.getString(4), cursor.getString(5),
+                cursor.getString(6), cursor.getString(7), cursor.getString(8), cursor.getString(9),
+                cursor.getString(10), cursor.getString(11), cursor.getString(12));
+
         cursor.close();
         close();
 

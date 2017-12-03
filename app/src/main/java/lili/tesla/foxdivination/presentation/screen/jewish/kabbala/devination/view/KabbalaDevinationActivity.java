@@ -59,7 +59,7 @@ public class KabbalaDevinationActivity extends BaseActivity implements KabbalaDe
     }
 
     @OnClick (R.id.button_kabbala_devination_back)
-    void onButtonKabbalaDevinationBack(){
+    void onBackClick(){
         finish();
     }
 

@@ -74,12 +74,12 @@ public class MainZodiakActivity extends BaseActivity implements MainZodiakView {
     }
 
     @OnClick (R.id.button_main_zodiak_back)
-    void onButtonBackClick() {
+    void onBackClick() {
         finish();
     }
 
     @OnClick (R.id.button_main_zodiak_close)
-    void onClose() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 

@@ -17,7 +17,7 @@
                 android:layout_margin="10dp"/>
 
             <LinearLayout
-                android:id="@+id/ll_ekaterina_domino_result_seven"
+                android:id="@+id/ll_domino_result_seven"
                 android:layout_below="@id/button_domino_result_seven_close"
                 style="@style/LinearLayoutResultStyle">
 

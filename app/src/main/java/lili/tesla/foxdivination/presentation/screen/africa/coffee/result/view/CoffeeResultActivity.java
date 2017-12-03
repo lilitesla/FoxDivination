@@ -36,22 +36,22 @@ public class CoffeeResultActivity extends BaseActivity implements CoffeeResultVi
     @BindView(R.id.textview_coffee_result_description)
     TextView mTextViewCoffeeResultDescription;
 
-    @BindView(R.id.image_coffee_result_1)  ImageView mImageCoffeeResult1;
-    @BindView(R.id.image_coffee_result_2)  ImageView mImageCoffeeResult2;
-    @BindView(R.id.image_coffee_result_3)  ImageView mImageCoffeeResult3;
-    @BindView(R.id.image_coffee_result_4)  ImageView mImageCoffeeResult4;
-    @BindView(R.id.image_coffee_result_5)  ImageView mImageCoffeeResult5;
-    @BindView(R.id.image_coffee_result_6)  ImageView mImageCoffeeResult6;
-    @BindView(R.id.image_coffee_result_7)  ImageView mImageCoffeeResult7;
-    @BindView(R.id.image_coffee_result_8)  ImageView mImageCoffeeResult8;
-    @BindView(R.id.image_coffee_result_9)  ImageView mImageCoffeeResult9;
-    @BindView(R.id.image_coffee_result_10)  ImageView mImageCoffeeResult10;
-    @BindView(R.id.image_coffee_result_11)  ImageView mImageCoffeeResult11;
-    @BindView(R.id.image_coffee_result_12)  ImageView mImageCoffeeResult12;
-    @BindView(R.id.image_coffee_result_13)  ImageView mImageCoffeeResult13;
-    @BindView(R.id.image_coffee_result_14)  ImageView mImageCoffeeResult14;
-    @BindView(R.id.image_coffee_result_15)  ImageView mImageCoffeeResult15;
-    @BindView(R.id.image_coffee_result_16)  ImageView mImageCoffeeResult16;
+    @BindView(R.id.image_coffee_result_1)  ImageView mImageResult1;
+    @BindView(R.id.image_coffee_result_2)  ImageView mImageResult2;
+    @BindView(R.id.image_coffee_result_3)  ImageView mImageResult3;
+    @BindView(R.id.image_coffee_result_4)  ImageView mImageResult4;
+    @BindView(R.id.image_coffee_result_5)  ImageView mImageResult5;
+    @BindView(R.id.image_coffee_result_6)  ImageView mImageResult6;
+    @BindView(R.id.image_coffee_result_7)  ImageView mImageResult7;
+    @BindView(R.id.image_coffee_result_8)  ImageView mImageResult8;
+    @BindView(R.id.image_coffee_result_9)  ImageView mImageResult9;
+    @BindView(R.id.image_coffee_result_10)  ImageView mImageResult10;
+    @BindView(R.id.image_coffee_result_11)  ImageView mImageResult11;
+    @BindView(R.id.image_coffee_result_12)  ImageView mImageResult12;
+    @BindView(R.id.image_coffee_result_13)  ImageView mImageResult13;
+    @BindView(R.id.image_coffee_result_14)  ImageView mImageResult14;
+    @BindView(R.id.image_coffee_result_15)  ImageView mImageResult15;
+    @BindView(R.id.image_coffee_result_16)  ImageView mImageResult16;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,22 +67,22 @@ public class CoffeeResultActivity extends BaseActivity implements CoffeeResultVi
         Utils.setTypefaceLite(mTextViewCoffeeResultDescription);
 
         images = new ImageView[] {
-                mImageCoffeeResult1, mImageCoffeeResult2, mImageCoffeeResult3, mImageCoffeeResult4,
-                mImageCoffeeResult5, mImageCoffeeResult6, mImageCoffeeResult7, mImageCoffeeResult8,
-                mImageCoffeeResult9, mImageCoffeeResult10, mImageCoffeeResult11, mImageCoffeeResult12,
-                mImageCoffeeResult13, mImageCoffeeResult14, mImageCoffeeResult15, mImageCoffeeResult16};
+                mImageResult1, mImageResult2, mImageResult3, mImageResult4,
+                mImageResult5, mImageResult6, mImageResult7, mImageResult8,
+                mImageResult9, mImageResult10, mImageResult11, mImageResult12,
+                mImageResult13, mImageResult14, mImageResult15, mImageResult16};
 
         mPresenter.showResults();
 
     }
 
     @OnClick (R.id.button_coffee_result_close)
-    void onButtonCoffeeResultCloseClick() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 
     @OnClick (R.id.button_coffee_result_back)
-    void onButtonCoffeeResultBack() {
+    void onBackClick() {
         finish();
     }
 

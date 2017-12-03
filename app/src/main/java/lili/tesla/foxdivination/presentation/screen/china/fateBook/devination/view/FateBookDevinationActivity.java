@@ -115,7 +115,7 @@ public class FateBookDevinationActivity extends BaseActivity implements FateBook
     }
 
     @OnClick (R.id.button_fatebook_divination_back)
-    void onButtonFateBookDivinationBackClick() {
+    void onBackClick() {
         finish();
     }
 

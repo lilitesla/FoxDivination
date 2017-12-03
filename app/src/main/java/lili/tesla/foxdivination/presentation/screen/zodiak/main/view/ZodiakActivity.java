@@ -12,7 +12,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
-import lili.tesla.foxdivination.presentation.screen.zodiak.chooseZodiak.view.ChooseZodiakActivity;
+import lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity;
+import lili.tesla.foxdivination.presentation.screen.zodiak.compatibility.main.view.MainCompatibilityZodiakActivity;
 import lili.tesla.foxdivination.presentation.screen.zodiak.main.presenter.ZodiakPresenter;
 import lili.tesla.foxdivination.presentation.util.Utils;
 
@@ -61,7 +62,7 @@ public class ZodiakActivity extends BaseActivity implements ZodiakView{
     }
 
     @OnClick (R.id.button_zodiak_back)
-    void onButtonZodiakBackClick() {
+    void onBackClick() {
         finish();
     }
 
@@ -100,32 +101,32 @@ public class ZodiakActivity extends BaseActivity implements ZodiakView{
 
     @OnClick (R.id.ll_zodiak_compatibility)
     void onLlZodiakCompatibilityClick() {
-        mPresenter.showLoveZodiakScreen();
+        mPresenter.showCompatibilityZodiakScreen();
     }
 
     @OnClick (R.id.button_zodiak_compatibility)
     void onButtonZodiakCompatibilityClick() {
-        mPresenter.showLoveZodiakScreen();
+        mPresenter.showCompatibilityZodiakScreen();
     }
 
     @OnClick (R.id.textview_zodiak_compatibility)
     void onTextViewZodiakCompatibilityClick() {
-        mPresenter.showLoveZodiakScreen();
+        mPresenter.showCompatibilityZodiakScreen();
     }
 
 
     @Override
     public void showMainZodiakScreen() {
-        ChooseZodiakActivity.start(this, 0);
+        ChooseGenderZodiakActivity.start(this, 0);
     }
 
     @Override
     public void showLoveZodiakScreen() {
-        ChooseZodiakActivity.start(this, 1);
+        ChooseGenderZodiakActivity.start(this, 1);
     }
 
     @Override
     public void showCompatibilityZodiakScreen() {
-
+        MainCompatibilityZodiakActivity.start(this);
     }
 }

@@ -96,12 +96,12 @@ public class EkaterinaResultActivity extends BaseActivity implements EkaterinaRe
     }
 
     @OnClick (R.id.button_ekaterina_result_back)
-    void onButtonEkaterinaResultBackClick() {
+    void onBackClick() {
         finish();
     }
 
     @OnClick (R.id.button_ekaterina_result_close)
-    void onButtonEkaterinaResultCloseClick() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 

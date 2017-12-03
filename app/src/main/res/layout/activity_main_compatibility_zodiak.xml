@@ -2,44 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/linearLayoutMainStyle"
-    tools:context="lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity">
+    tools:context="lili.tesla.foxdivination.presentation.screen.zodiak.compatibility.main.view.MainCompatibilityZodiakActivity">
 
     <RelativeLayout
         style="@style/ScrollViewStyle">
 
         <LinearLayout
-            android:id="@+id/ll_choose_zodiak_gender"
+            android:id="@+id/ll_zodiak_compatibility"
             style="@style/MainLinearLayoutStyle">
 
             <ImageView
-                android:id="@+id/image_zodiak_choose"
-                android:background="@drawable/zodiak_main"
+                android:id="@+id/image_zodiak_compatibility_main"
+                android:background="@drawable/zodiak_compatibility"
                 style="@style/mainImageStyle"/>
 
             <TextView
-                android:id="@+id/textview_choose_gender_caption"
-                android:text="@string/choose_gender"
+                android:id="@+id/textview_zodiak_compatibility_man"
+                android:text="@string/choose_zodiak_man"
                 style="@style/MainCaptionStyle"
                 android:layout_marginTop="40dp"/>
 
             <Spinner
-                android:id="@+id/spinner_zodiak_gender"
+                android:id="@+id/spinner_zodiak_compatibility_man"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/gender"
+                android:entries="@array/zodiak"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="10dp"
                 />
 
             <TextView
-                android:id="@+id/textview_choose_zodiak_caption"
-                android:text="@string/choose_zodiak"
+                android:id="@+id/textview_zodiak_compatibility_woman"
+                android:text="@string/choose_zodiak_woman"
                 style="@style/MainCaptionStyle"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginTop="60dp"/>
 
             <Spinner
-                android:id="@+id/spinner_zodiak"
+                android:id="@+id/spinner_zodiak_compatibility_woman"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/zodiak"
@@ -51,15 +51,15 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button_choose_zodiak_gender_start"
+            android:id="@+id/button_zodiak_compatibility_start"
             android:text="@string/button_show_goroskop"
             style="@style/showResultButtonStyle"
-            android:layout_above="@+id/button_choose_zodiak_gender_back"
+            android:layout_above="@+id/button_zodiak_compatibility_back"
             android:layout_centerHorizontal="true"/>
 
+
         <ImageButton
-            android:id="@id/button_choose_zodiak_gender_back"
-            android:layout_marginTop="10dp"
+            android:id="@id/button_zodiak_compatibility_back"
             style="@style/buttonBackStyle" />
 
     </RelativeLayout>

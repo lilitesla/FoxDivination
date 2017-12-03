@@ -69,7 +69,7 @@ public class AfricaMainActivity extends BaseActivity implements AfricaMainView {
     }
 
     @OnClick (R.id.button_africa_back)
-    void onButtonAfricaBackClick() {
+    void onBackClick() {
         finish();
     }
 

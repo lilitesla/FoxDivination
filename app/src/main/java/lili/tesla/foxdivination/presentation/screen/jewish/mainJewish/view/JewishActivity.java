@@ -48,7 +48,7 @@ public class JewishActivity extends BaseActivity implements JewishView {
     }
 
     @OnClick (R.id.button_jewish_back)
-    void onButtonJewishBackClick() {
+    void onBackClick() {
         finish();
     }
 

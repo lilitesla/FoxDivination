@@ -58,12 +58,12 @@ public class KabbalaResultActivity extends BaseActivity implements KabbalaResult
     }
 
     @OnClick (R.id.button_kabbala_result_close)
-    void onButtonKabbalaResultClose() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 
     @OnClick (R.id.button_kabbala_result_back)
-    void onButtonKabbalaMainBack() {
+    void onBackClick() {
         finish();
     }
 

@@ -141,12 +141,12 @@ public class DominoResultSevenActivity extends BaseActivity implements DominoRes
     }
 
     @OnClick(R.id.button_domino_result_seven_back)
-    void onButtonDominoResultSevenBackClick() {
+    void onBackClick() {
         finish();
     }
 
     @OnClick (R.id.button_domino_result_seven_close)
-    void onButtonDominoResultSevenCloseClick() {
+    void onCloseClick() {
         mPresenter.showMainScreen();
     }
 

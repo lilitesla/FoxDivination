@@ -51,7 +51,7 @@ public class DominoMainActivity extends BaseActivity implements DominoMainView {
     }
 
     @OnClick (R.id.button_domino_main_back)
-    void onButtonDominoMainBackClick() {
+    void onBackClick() {
         finish();
     }
 

@@ -51,7 +51,7 @@ public class EkaterinaMainActivity extends BaseActivity implements EkaterinaMain
     }
 
     @OnClick (R.id.button_ekaterina_main_back)
-    void onButtonEkaterinaMainBackClick() {
+    void onBackClick() {
         finish();
     }
 

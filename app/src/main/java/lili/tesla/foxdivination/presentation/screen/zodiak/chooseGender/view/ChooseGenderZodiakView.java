@@ -6,7 +6,6 @@ package lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.view;
 
 public interface ChooseGenderZodiakView {
 
-    void showMainZodiakScreen(int gender);
-    void showLoveZodiakScreen(int gender);
+    void showMainZodiakScreen(int gender, int pred);
 
 }

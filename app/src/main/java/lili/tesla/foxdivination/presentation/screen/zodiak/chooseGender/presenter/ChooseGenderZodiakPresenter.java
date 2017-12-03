@@ -10,11 +10,7 @@ import lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.view.Cho
 public class ChooseGenderZodiakPresenter extends BasePresenter<ChooseGenderZodiakView> {
 
     public void showZodiakResult(int pred, int gender) {
-        if (pred == 0) {
-            mView.showMainZodiakScreen(gender);
-        } else {
-            mView.showLoveZodiakScreen(gender);
-        }
+        mView.showMainZodiakScreen(gender, pred);
     }
 
 }

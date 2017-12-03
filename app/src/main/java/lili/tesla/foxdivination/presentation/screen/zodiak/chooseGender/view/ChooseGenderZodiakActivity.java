@@ -63,14 +63,9 @@ public class ChooseGenderZodiakActivity extends BaseActivity implements ChooseGe
         finish();
     }
 
-
     @Override
-    public void showMainZodiakScreen(int gender) {
-        MainZodiakActivity.start(this, gender, mZodiakId);
+    public void showMainZodiakScreen(int gender, int pred) {
+        MainZodiakActivity.start(this, gender, mZodiakId, pred);
     }
 
-    @Override
-    public void showLoveZodiakScreen(int gender) {
-
-    }
 }

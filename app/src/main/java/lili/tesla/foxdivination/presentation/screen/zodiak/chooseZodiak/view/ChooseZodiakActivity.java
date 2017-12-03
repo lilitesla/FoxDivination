@@ -5,13 +5,16 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity;
 import lili.tesla.foxdivination.presentation.screen.zodiak.chooseZodiak.presenter.ChooseZodiakPresenter;
+import lili.tesla.foxdivination.presentation.util.Utils;
 
 public class ChooseZodiakActivity extends BaseActivity implements ChooseZodiakView {
 
@@ -28,6 +31,43 @@ public class ChooseZodiakActivity extends BaseActivity implements ChooseZodiakVi
     private ChooseZodiakPresenter mPresenter;
     private int mPred;
 
+    @BindView(R.id.textview_main_aries)
+    TextView mTv1;
+
+    @BindView(R.id.textview_main_taurus)
+    TextView mTv2;
+
+    @BindView(R.id.textview_main_twins)
+    TextView mTv3;
+
+    @BindView(R.id.textview_main_cancer)
+    TextView mTv4;
+
+    @BindView(R.id.textview_main_lion)
+    TextView mTv5;
+
+    @BindView(R.id.textview_main_virgo)
+    TextView mTv6;
+
+    @BindView(R.id.textview_main_libra)
+    TextView mTv7;
+
+    @BindView(R.id.textview_main_scorpio)
+    TextView mTv8;
+
+    @BindView(R.id.textview_main_sagittarius)
+    TextView mTv9;
+
+    @BindView(R.id.textview_main_capricorn)
+    TextView mTv10;
+
+    @BindView(R.id.textview_main_aquarius)
+    TextView mTv11;
+
+    @BindView(R.id.textview_main_fish)
+    TextView mTv12;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +78,18 @@ public class ChooseZodiakActivity extends BaseActivity implements ChooseZodiakVi
         mPresenter = new ChooseZodiakPresenter();
         mPresenter.setView(this);
 
+        Utils.setTypefaceLite(mTv1);
+        Utils.setTypefaceLite(mTv2);
+        Utils.setTypefaceLite(mTv3);
+        Utils.setTypefaceLite(mTv4);
+        Utils.setTypefaceLite(mTv5);
+        Utils.setTypefaceLite(mTv6);
+        Utils.setTypefaceLite(mTv7);
+        Utils.setTypefaceLite(mTv8);
+        Utils.setTypefaceLite(mTv9);
+        Utils.setTypefaceLite(mTv10);
+        Utils.setTypefaceLite(mTv11);
+        Utils.setTypefaceLite(mTv12);
 
         mPred = getIntent().getIntExtra(EXTRA_KEY_PRED, 0);
     }
@@ -293,5 +345,6 @@ public class ChooseZodiakActivity extends BaseActivity implements ChooseZodiakVi
     @Override
     public void showGenderScreen(int zodiakId) {
         ChooseGenderZodiakActivity.start(this, mPred, zodiakId);
+        finish();
     }
 }

@@ -37,7 +37,8 @@
         <activity android:name=".presentation.screen.zodiak.main.view.ZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.chooseZodiak.view.ChooseZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity" />
-        <activity android:name=".presentation.screen.zodiak.mainZodiak.view.MainZodiakActivity"></activity>
+        <activity android:name=".presentation.screen.zodiak.mainZodiak.view.MainZodiakActivity" />
+        <activity android:name=".presentation.screen.zodiak.loveZodiak.view.LoveZodiakActivity"></activity>
     </application>
 
 </manifest>

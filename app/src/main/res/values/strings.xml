@@ -96,8 +96,8 @@
     <string name="zodiak_aquarius">Водолей</string>
     <string name="zodiak_fish">Рыбы</string>
 
-    <string name="gender_woman">Женщина - </string>
-    <string name="gender_man">Мужчина - </string>
+    <string name="gender_woman">Женщина</string>
+    <string name="gender_man">Мужчина</string>
 
     <array name="zodiak">
         <item>Овен</item>

@@ -15,10 +15,18 @@ public class MainZodiakPresenter extends BasePresenter<MainZodiakView> {
         mView.showMainScreen();
     }
 
-    public void showResults(int gender, int zodiakId) {
+    public void showResults(int gender, int zodiakId, int pred) {
 
-        Zodiac zodiac = App.dataBaseAccess.getMainZodiac(gender, zodiakId);
-        mView.showResults(zodiac);
+        if (pred == 0) {
+            Zodiac zodiac = App.dataBaseAccess.getMainZodiac(gender, zodiakId);
+            mView.showResults(zodiac, pred);
+        } else {
+            Zodiac zodiac = App.dataBaseAccess.getLoveZodiac(gender, zodiakId);
+            mView.showResults(zodiac, pred);
+        }
+
     }
+
+
 
 }

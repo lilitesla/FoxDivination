@@ -9,6 +9,6 @@ import lili.tesla.foxdivination.data.Zodiac;
 public interface MainZodiakView {
 
     void showMainScreen();
-    void showResults(Zodiac zodiac);
+    void showResults(Zodiac zodiac, int pred);
 
 }

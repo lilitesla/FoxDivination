@@ -26,13 +26,13 @@
                     <RelativeLayout style="@style/ZodiakRLStyle"
                         android:elevation="0dp">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_aries_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"
                             android:layout_gravity="center"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_aries"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_aries"
@@ -52,12 +52,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_taurus_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_taurus"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_taurus"/>
@@ -76,12 +76,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_twins_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_twins"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_twins"/>
@@ -104,12 +104,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_cancer_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_cancer"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_cancer"/>
@@ -128,12 +128,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_lion_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_lion"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_lion"/>
@@ -152,12 +152,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_virgo_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_virgo"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_virgo"/>
@@ -180,12 +180,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_libra_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_libra"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_libra"/>
@@ -204,12 +204,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_scorpio_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_scorpio"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_scorpio"/>
@@ -228,12 +228,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_sagittarius_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_sagittarius"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_sagittarius"/>
@@ -256,12 +256,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_capricorn_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_capricorn"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_capricorn"/>
@@ -280,12 +280,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_aquarius_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_aquarius"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_aquarius"/>
@@ -304,12 +304,12 @@
 
                     <RelativeLayout style="@style/ZodiakRLStyle">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_fish_background"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_background"/>
 
-                        <Button
+                        <ImageView
                             android:id="@+id/button_main_fish"
                             style="@style/imageButtonStyleZodiak"
                             android:background="@drawable/zodiac_fish"/>

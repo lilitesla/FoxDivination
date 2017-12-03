@@ -1,6 +1,8 @@
 package lili.tesla.foxdivination.presentation.screen.zodiak.compatibility.main.view;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +29,8 @@ public class MainCompatibilityZodiakActivity extends BaseActivity implements Mai
     }
 
     private MainCompatibilityZodiakPresenter mPresenter;
+    private int mManZodiacId;
+    private int mWomanZodiacId;
 
     @BindView(R.id.textview_zodiak_compatibility_man)
     TextView mTextviewMan;
@@ -34,11 +38,11 @@ public class MainCompatibilityZodiakActivity extends BaseActivity implements Mai
     @BindView(R.id.textview_zodiak_compatibility_woman)
     TextView mTextviewWoman;
 
-    @BindView(R.id.spinner_zodiak_compatibility_man)
-    Spinner mSpinnerMan;
+    @BindView(R.id.textview_zodiac_man)
+    TextView mTvMan;
 
-    @BindView(R.id.spinner_zodiak_compatibility_woman)
-    Spinner mSpinnerWoman;
+    @BindView(R.id.textview_zodiac_woman)
+    TextView mTvWoman;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,14 @@ public class MainCompatibilityZodiakActivity extends BaseActivity implements Mai
 
         Utils.setTypefaceBold(mTextviewMan);
         Utils.setTypefaceBold(mTextviewWoman);
+        Utils.setTypefaceLite(mTvMan);
+        Utils.setTypefaceLite(mTvWoman);
+
+        Utils.setTextSpannable(mTvMan);
+        Utils.setTextSpannable(mTvWoman);
+
+        mManZodiacId = 0;
+        mWomanZodiacId = 0;
 
     }
 
@@ -62,15 +74,60 @@ public class MainCompatibilityZodiakActivity extends BaseActivity implements Mai
 
     @OnClick (R.id.button_zodiak_compatibility_start)
     void onButtonStartClick() {
-        int spinIdMan = mSpinnerMan.getSelectedItemPosition() + 1;
-        int spinIdWoman = mSpinnerWoman.getSelectedItemPosition() + 1;
-        mPresenter.showResults(spinIdMan, spinIdWoman);
+        mPresenter.showResults();
     }
 
+    @OnClick (R.id.textview_zodiac_man)
+    void onTvZodiacManClick() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainCompatibilityZodiakActivity.this);
+        builder.setTitle(R.string.choose_zodiak)
+                .setPositiveButton("Ок",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                            }
+                        })
+                .setSingleChoiceItems(R.array.zodiak, mManZodiacId,
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int item) {
+                                mManZodiacId = item;
+                                mTvMan.setText(getResources().getStringArray(R.array.zodiak)[mManZodiacId]);
+                                Utils.setTextSpannable(mTvMan);
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    @OnClick (R.id.textview_zodiac_woman)
+    void onTvZodiacWomanClick() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainCompatibilityZodiakActivity.this);
+        builder.setTitle(R.string.choose_zodiak)
+                .setPositiveButton("Ок",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.cancel();
+                            }
+                        })
+                .setSingleChoiceItems(R.array.zodiak, mWomanZodiacId,
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int item) {
+                                mWomanZodiacId = item;
+                                mTvWoman.setText(getResources().getStringArray(R.array.zodiak)[mWomanZodiacId]);
+                                Utils.setTextSpannable(mTvWoman);
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 
     @Override
-    public void showResults(int manZodiacId, int womanZodiacId) {
-        ResultCompatibilityZodiakActivity.start(this, manZodiacId, womanZodiacId);
+    public void showResults() {
+        ResultCompatibilityZodiakActivity.start(this, mManZodiacId + 1, mWomanZodiacId + 1);
         finish();
     }
 }

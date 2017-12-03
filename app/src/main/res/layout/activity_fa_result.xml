@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.africa.fa.result.view.FaResultActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle">
+
+        <ImageButton
+            android:id="@+id/button_fa_result_close"
+            style="@style/buttonCloseStyle"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_fa_result"
+            android:layout_below="@id/button_fa_result_close"
+            style="@style/LinearLayoutResultStyle">
+
+            <LinearLayout
+                style="@style/LinLayImageButtonsStyle">
+
+                <ImageView
+                    android:id="@+id/image_fa_result_1"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+                <ImageView
+                    android:id="@+id/image_fa_result_2"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinLayImageButtonsStyle">
+
+                <ImageView
+                    android:id="@+id/image_fa_result_3"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+                <ImageView
+                    android:id="@+id/image_fa_result_4"
+                    style="@style/imageButtonStyle"
+                    android:background="@drawable/fatebook_solid_line"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textview_fa_result_caption"
+                android:text="название"
+                style="@style/MainCaptionStyle"/>
+
+            <TextView
+                android:id="@+id/textview_fa_result_description"
+                android:text="результаты"
+                style="@style/MainDescriptionStyle"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_fa_result_back"
+            style="@style/buttonBackStyle" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

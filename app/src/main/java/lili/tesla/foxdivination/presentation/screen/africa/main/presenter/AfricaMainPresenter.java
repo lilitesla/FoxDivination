@@ -13,4 +13,13 @@ public class AfricaMainPresenter extends BasePresenter<AfricaMainView> {
         mView.showCoffeeScreen();
     }
 
+    public void showFaScreen() {
+        mView.showFaScreen();
+    }
+
+    public void showSpiderScreen() {
+        mView.showSpiderScreen();
+    }
+
+
 }

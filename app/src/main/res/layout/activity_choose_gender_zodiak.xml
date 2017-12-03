@@ -22,15 +22,15 @@
                 style="@style/MainCaptionStyle"
                 android:layout_marginTop="40dp"/>
 
-            <Spinner
-                android:id="@+id/spinner_zodiak_gender"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textview_gender"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/gender"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:text="@string/gender_woman"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                />
+                android:textColor="@color/blue_dark"
+                android:textSize="24dp"/>
 
             <TextView
                 android:id="@+id/textview_choose_zodiak_caption"
@@ -38,15 +38,16 @@
                 style="@style/MainCaptionStyle"
                 android:layout_marginTop="50dp"/>
 
-            <Spinner
-                android:id="@+id/spinner_zodiak"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textview_zodiac"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/zodiak"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:text="@string/zodiak_aries"
+                android:textColor="@color/blue_dark"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                />
+                android:textSize="24dp"/>
+
 
         </LinearLayout>
 

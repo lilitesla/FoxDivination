@@ -7,5 +7,7 @@ package lili.tesla.foxdivination.presentation.screen.africa.main.view;
 public interface AfricaMainView {
 
     void showCoffeeScreen();
+    void showFaScreen();
+    void showSpiderScreen();
 
 }

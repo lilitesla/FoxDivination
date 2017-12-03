@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.africa.fa.main.view.FaMainActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_fa_main"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_fa_main"
+                android:background="@drawable/fatebook_in"
+                style="@style/mainImageStyle"/>
+
+            <TextView
+                android:id="@+id/textview_fa_main_caption"
+                android:text="@string/fa_caption"
+                style="@style/MainCaptionStyle"/>
+
+            <TextView
+                android:id="@+id/textview_fa_main_description"
+                android:text="@string/fa_description"
+                style="@style/MainDescriptionStyle"/>
+
+            <Button
+                android:id="@+id/button_fa_main_start"
+                android:text="@string/button_show_prediction"
+                style="@style/showResultButtonStyle"/>
+
+
+            <ImageButton
+                android:id="@+id/button_fa_main_back"
+                style="@style/buttonBackStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

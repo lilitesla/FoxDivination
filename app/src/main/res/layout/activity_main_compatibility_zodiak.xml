@@ -22,31 +22,31 @@
                 style="@style/MainCaptionStyle"
                 android:layout_marginTop="40dp"/>
 
-            <Spinner
-                android:id="@+id/spinner_zodiak_compatibility_man"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textview_zodiac_man"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/zodiak"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:text="@string/zodiak_aries"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                />
+                android:textColor="@color/blue_dark"
+                android:textSize="24dp"/>
 
             <TextView
                 android:id="@+id/textview_zodiak_compatibility_woman"
                 android:text="@string/choose_zodiak_woman"
                 style="@style/MainCaptionStyle"
-                android:layout_marginTop="60dp"/>
+                android:layout_marginTop="50dp"/>
 
-            <Spinner
-                android:id="@+id/spinner_zodiak_compatibility_woman"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textview_zodiac_woman"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/zodiak"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:text="@string/zodiak_aries"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                />
+                android:textColor="@color/blue_dark"
+                android:textSize="24dp"/>
 
         </LinearLayout>
 

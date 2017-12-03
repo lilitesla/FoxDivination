@@ -30,6 +30,25 @@ tools:context="lili.tesla.foxdivination.presentation.screen.africa.main.view.Afr
             style="@style/LinLayImageButtonsStyle"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:id="@+id/main_ll_spider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_spider"
+                    style="@style/imageButtonStyle"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spider"/>
+                <TextView
+                    android:id="@+id/textview_main_spider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spider_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/main_ll_coffee"
@@ -50,6 +69,27 @@ tools:context="lili.tesla.foxdivination.presentation.screen.africa.main.view.Afr
                     android:textSize="11sp"
                     android:gravity="center"/>
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ll_fa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_fa"
+                    style="@style/imageButtonStyle"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fatebook_in"/>
+                <TextView
+                    android:id="@+id/textview_main_fa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
 
 
 

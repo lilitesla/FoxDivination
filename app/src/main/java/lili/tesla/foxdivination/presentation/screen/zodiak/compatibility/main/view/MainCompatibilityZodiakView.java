@@ -6,6 +6,6 @@ package lili.tesla.foxdivination.presentation.screen.zodiak.compatibility.main.v
 
 public interface MainCompatibilityZodiakView {
 
-    void showResults(int manZodiacId, int womanZodiacId);
+    void showResults();
 
 }

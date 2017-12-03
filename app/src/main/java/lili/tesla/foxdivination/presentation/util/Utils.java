@@ -1,6 +1,9 @@
 package lili.tesla.foxdivination.presentation.util;
 
 import android.graphics.Typeface;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -46,6 +49,13 @@ public class Utils {
     public static void setTypefaceBold(TextView tv) {
         tv.setTypeface(Typeface.createFromAsset(
                 App.getContext().getAssets(),"fonts/seguisb.ttf"));
+    }
+
+    public static void setTextSpannable(TextView tv) {
+        String s = tv.getText().toString();
+        SpannableString ss = new SpannableString(s);
+        ss.setSpan(new UnderlineSpan(), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        tv.setText(ss);
     }
 
 }

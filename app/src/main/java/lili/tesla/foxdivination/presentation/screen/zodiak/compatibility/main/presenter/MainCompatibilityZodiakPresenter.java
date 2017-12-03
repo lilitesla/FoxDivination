@@ -9,8 +9,8 @@ import lili.tesla.foxdivination.presentation.screen.zodiak.compatibility.main.vi
 
 public class MainCompatibilityZodiakPresenter extends BasePresenter<MainCompatibilityZodiakView> {
 
-    public void showResults(int manZodiacId, int womanZodiacId) {
-        mView.showResults(manZodiacId, womanZodiacId);
+    public void showResults() {
+        mView.showResults();
     }
 
 }

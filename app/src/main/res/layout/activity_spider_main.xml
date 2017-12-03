@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.africa.spider.main.view.SpiderMainActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_spider_main"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_spider_main"
+                android:background="@drawable/spider"
+                style="@style/mainImageStyle"/>
+
+            <TextView
+                android:id="@+id/textview_spider_main_caption"
+                android:text="@string/spider_caption"
+                style="@style/MainCaptionStyle"/>
+
+            <TextView
+                android:id="@+id/textview_spider_main_description"
+                android:text="@string/spider_description"
+                style="@style/MainDescriptionStyle"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_spider_main_start"
+            android:layout_above="@+id/button_spider_main_back"
+            android:text="@string/button_show_prediction"
+            android:layout_centerHorizontal="true"
+            style="@style/showResultButtonStyle"/>
+
+        <ImageButton
+            android:id="@id/button_spider_main_back"
+            style="@style/buttonBackStyle" />
+
+    </RelativeLayout>
+
+</LinearLayout>

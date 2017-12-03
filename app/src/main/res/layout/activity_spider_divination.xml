@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.africa.spider.divination.view.SpiderDivinationActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_spider_devination"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_spider_divination"
+                android:background="@drawable/spider"
+                style="@style/mainImageStyle" />
+
+            <TextView
+                android:id="@+id/textview_spider_divination_manual"
+                android:text="@string/spider_manual"
+                style="@style/MainDescriptionStyle"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edittext_spider_divination_wish_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Введите первое желание"/>
+
+            <EditText
+                android:id="@+id/edittext_spider_divination_wish_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Введите второе желание"/>
+
+            <EditText
+                android:id="@+id/edittext_spider_divination_wish_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Введите третье желание"/>
+
+            <EditText
+                android:id="@+id/edittext_spider_divination_wish_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Введите четвертое желание"/>
+
+            <EditText
+                android:id="@+id/edittext_spider_divination_wish_5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Введите пятое желание"/>
+
+            <Button
+                android:id="@+id/button_spider_divination_show_result"
+                android:text="@string/button_show_results"
+                style="@style/showResultButtonStyle"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/button_spider_divination_back"
+                style="@style/buttonBackStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

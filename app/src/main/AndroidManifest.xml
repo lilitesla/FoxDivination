@@ -42,7 +42,10 @@
         <activity android:name=".presentation.screen.zodiak.compatibility.main.view.MainCompatibilityZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.compatibility.result.view.ResultCompatibilityZodiakActivity" />
         <activity android:name=".presentation.screen.africa.fa.result.view.FaResultActivity" />
-        <activity android:name=".presentation.screen.africa.fa.main.view.FaMainActivity"></activity>
+        <activity android:name=".presentation.screen.africa.fa.main.view.FaMainActivity" />
+        <activity android:name=".presentation.screen.africa.spider.main.view.SpiderMainActivity" />
+        <activity android:name=".presentation.screen.africa.spider.result.view.SpiderResultActivity" />
+        <activity android:name=".presentation.screen.africa.spider.divination.view.SpiderDivinationActivity"></activity>
     </application>
 
 </manifest>

@@ -13,7 +13,7 @@
 
             <ImageView
                 android:id="@+id/image_fa_main"
-                android:background="@drawable/fatebook_in"
+                android:background="@drawable/orel_africa"
                 style="@style/mainImageStyle"/>
 
             <TextView

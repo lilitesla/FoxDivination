@@ -16,6 +16,7 @@ import lili.tesla.foxdivination.R;
 import lili.tesla.foxdivination.presentation.screen.africa.coffee.main.view.CoffeeMainActivity;
 import lili.tesla.foxdivination.presentation.screen.africa.fa.main.view.FaMainActivity;
 import lili.tesla.foxdivination.presentation.screen.africa.main.presenter.AfricaMainPresenter;
+import lili.tesla.foxdivination.presentation.screen.africa.spider.main.view.SpiderMainActivity;
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.util.Utils;
 
@@ -86,6 +87,21 @@ public class AfricaMainActivity extends BaseActivity implements AfricaMainView {
     }
 
 
+    @OnClick (R.id.main_ll_spider)
+    void onMainLLSpiderClick() {
+        mPresenter.showSpiderScreen();
+    }
+
+    @OnClick (R.id.main_button_spider)
+    void onMainButtonSpiderClick() {
+        mPresenter.showSpiderScreen();
+    }
+
+    @OnClick (R.id.textview_main_spider)
+    void onMainTvSpiderClick()  {
+        mPresenter.showSpiderScreen();
+    }
+
 
 
     @OnClick (R.id.button_africa_back)
@@ -105,6 +121,6 @@ public class AfricaMainActivity extends BaseActivity implements AfricaMainView {
 
     @Override
     public void showSpiderScreen() {
-
+        SpiderMainActivity.start(this);
     }
 }

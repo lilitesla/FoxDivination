@@ -80,7 +80,7 @@ tools:context="lili.tesla.foxdivination.presentation.screen.africa.main.view.Afr
                     android:id="@+id/main_button_fa"
                     style="@style/imageButtonStyle"
                     android:layout_gravity="center"
-                    android:background="@drawable/fatebook_in"/>
+                    android:background="@drawable/orel_africa"/>
                 <TextView
                     android:id="@+id/textview_main_fa"
                     android:layout_width="match_parent"

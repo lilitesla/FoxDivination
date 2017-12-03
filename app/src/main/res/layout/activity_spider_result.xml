@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.africa.spider.result.view.SpiderResultActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/button_spider_result_close"
+                style="@style/buttonCloseStyle"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_spider_result"
+                android:layout_below="@id/button_spider_result_close"
+                style="@style/LinearLayoutResultStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_1"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/paper"/>
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_web_1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/web"/>
+
+                        <TextView
+                            android:id="@+id/textview_spider_result_1"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:gravity="center"
+                            android:textSize="24sp"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_2"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/paper"/>
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_web_2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/web"/>
+
+                        <TextView
+                            android:id="@+id/textview_spider_result_2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="2"
+                            android:gravity="center"
+                            android:textSize="24sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_3"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/paper"/>
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_web_3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/web"/>
+
+                        <TextView
+                            android:id="@+id/textview_spider_result_3"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="3"
+                            android:gravity="center"
+                            android:textSize="24sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_4"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/paper"/>
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_web_4"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/web"/>
+
+                        <TextView
+                            android:id="@+id/textview_spider_result_4"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="4"
+                            android:gravity="center"
+                            android:textSize="24sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp">
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_5"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/paper"/>
+
+                        <ImageView
+                            android:id="@+id/image_spider_result_web_5"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/web"/>
+
+                        <TextView
+                            android:id="@+id/textview_spider_result_5"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="5"
+                            android:gravity="center"
+                            android:textSize="24sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_spider_result_caption"
+                    android:text="@string/spider_result_caption"
+                    style="@style/textViewDominoCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_spider_result_description"
+                    style="@style/textviewDominoDescriptionStyle" />
+
+                <ImageButton
+                    android:id="@+id/button_spider_result_back"
+                    android:layout_marginTop="20dp"
+                    style="@style/buttonBackStyle" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

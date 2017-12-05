@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.japan.main.view.JapanActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_japan"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_japan"
+                android:background="@drawable/japanese"
+                style="@style/mainImageStyle"/>
+
+            <TextView
+                android:id="@+id/textview_japan_caption"
+                android:text="@string/japan_caption"
+                style="@style/MainCaptionStyle"/>
+
+            <TextView
+                android:id="@+id/textview_japan_description"
+                android:text="@string/japan_description"
+                style="@style/MainDescriptionStyle"/>
+
+            <LinearLayout
+                style="@style/LinLayImageButtonsStyle"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/main_ll_mokuso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/main_button_mokuso"
+                        style="@style/imageButtonStyle"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mokuso"/>
+                    <TextView
+                        android:id="@+id/textview_main_mokuso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mokuso_caption"
+                        android:textSize="11sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_ll_hokku"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/main_button_hokku"
+                        style="@style/imageButtonStyle"
+                        android:layout_gravity="center"
+                        android:background="@drawable/hokku"/>
+                    <TextView
+                        android:id="@+id/textview_main_hokku"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hokku_caption"
+                        android:textSize="11sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/button_hokku_back"
+                style="@style/buttonBackStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

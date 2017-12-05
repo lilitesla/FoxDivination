@@ -27,21 +27,69 @@
                     style="@style/MainDescriptionStyle"/>
 
                 <LinearLayout
-                 style="@style/LinLayImageButtonsStyle">
+                    style="@style/LinLayImageButtonsStyle"
+                    android:layout_height="wrap_content">
 
-                 <Button
-                     android:id="@+id/button_fatebook"
-                     style="@style/imageButtonStyle"
-                     android:background="@drawable/ekaterina_book"/>
+                    <LinearLayout
+                        android:id="@+id/main_ll_fatebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/button_fatebook"
+                            style="@style/imageButtonStyle"
+                            android:layout_gravity="center"
+                            android:background="@drawable/fatebook"/>
+                        <TextView
+                            android:id="@+id/textview_fatebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fate_book_main_caption"
+                            android:textSize="11sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
 
-                 <Button
-                     android:id="@+id/button_domino"
-                     style="@style/imageButtonStyle"
-                     android:background="@drawable/domino"/>
+                    <LinearLayout
+                        android:id="@+id/main_ll_domino"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/button_domino"
+                            style="@style/imageButtonStyle"
+                            android:layout_gravity="center"
+                            android:background="@drawable/domino"/>
+                        <TextView
+                            android:id="@+id/textview_domino"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/domino_caption"
+                            android:textSize="11sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
 
-                 <Button
-                     style="@style/imageButtonStyle"
-                     android:background="@drawable/ekaterina_crown"/>
+                    <LinearLayout
+                        android:id="@+id/main_ll_madjong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/button_madjong"
+                            style="@style/imageButtonStyle"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ekaterina_crown"/>
+                        <TextView
+                            android:id="@+id/textview_madjong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Маджонг"
+                            android:textSize="11sp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
 
              </LinearLayout>
 

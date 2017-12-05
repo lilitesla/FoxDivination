@@ -21,5 +21,8 @@ public class MainPresenter extends BasePresenter<MainView> {
 
     public void showZodiakScreen() { mView.showZodiakScreen(); }
 
+    public void showJapanScreen() {
+        mView.showJapanScreen();
+    }
 
 }

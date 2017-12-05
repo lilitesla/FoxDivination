@@ -32,6 +32,10 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
 
     @BindView(R.id.textview_china_caption)     TextView mTextViewChinaCaption;
     @BindView(R.id.textview_china_description) TextView mTextViewChinaDescription;
+    @BindView(R.id.textview_fatebook)          TextView mTextViewFatebook;
+    @BindView(R.id.textview_domino)            TextView mTextViewDomino;
+    @BindView(R.id.textview_madjong)           TextView mTextViewMadjong;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +49,15 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
 
         Utils.setTypefaceBold(mTextViewChinaCaption);
         Utils.setTypefaceLite(mTextViewChinaDescription);
+        Utils.setTypefaceLite(mTextViewFatebook);
+        Utils.setTypefaceLite(mTextViewDomino);
+        Utils.setTypefaceLite(mTextViewMadjong);
 
+    }
+
+    @OnClick (R.id.main_ll_fatebook)
+    void onLLFateBookClick() {
+        mPresenter.showFateBookScreen();
     }
 
     @OnClick (R.id.button_fatebook)
@@ -53,8 +65,37 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
         mPresenter.showFateBookScreen();
     }
 
+    @OnClick (R.id.textview_fatebook)
+    void onTvFateBookClick() {
+        mPresenter.showFateBookScreen();
+    }
+
+
+    @OnClick (R.id.main_ll_domino)
+    void onLLDominoClick() { mPresenter.showDominoScreen(); }
+
     @OnClick (R.id.button_domino)
     void onButtonDominoClick() { mPresenter.showDominoScreen(); }
+
+    @OnClick (R.id.textview_domino)
+    void onTvDominoClick() { mPresenter.showDominoScreen(); }
+
+
+    @OnClick (R.id.main_ll_madjong)
+    void onLLMadjongClick() {
+        mPresenter.showMadjongScreen();
+    }
+
+    @OnClick (R.id.button_madjong)
+    void onButtonMadjongClick() {
+        mPresenter.showMadjongScreen();
+    }
+
+    @OnClick (R.id.textview_madjong)
+    void onTvMadjongClick() {
+        mPresenter.showMadjongScreen();
+    }
+
 
     @OnClick (R.id.button_china_back)
     void onBackClick() {
@@ -75,5 +116,10 @@ public class ChinaActivity extends BaseActivity implements ChinaView {
     @Override
     public void showDominoScreen() {
         DominoMainActivity.start(this);
+    }
+
+    @Override
+    public void showMadjongScreen() {
+
     }
 }

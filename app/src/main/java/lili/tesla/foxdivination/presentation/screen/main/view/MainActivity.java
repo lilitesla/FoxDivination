@@ -15,6 +15,7 @@ import lili.tesla.foxdivination.presentation.screen.africa.main.view.AfricaMainA
 import lili.tesla.foxdivination.presentation.screen.base.BaseActivity;
 import lili.tesla.foxdivination.presentation.screen.china.mainChina.view.ChinaActivity;
 import lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.EkaterinaMainActivity;
+import lili.tesla.foxdivination.presentation.screen.japan.main.view.JapanActivity;
 import lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.view.JewishActivity;
 import lili.tesla.foxdivination.presentation.screen.main.presenter.MainPresenter;
 import lili.tesla.foxdivination.presentation.screen.zodiak.main.view.ZodiakActivity;
@@ -112,6 +113,21 @@ public class MainActivity extends BaseActivity implements MainView{
     void onMainTextViewZodiakClick() { mPresenter.showZodiakScreen(); }
 
 
+    @OnClick (R.id.main_button_japan)
+    void onMainButtonJapanClick() {
+        mPresenter.showJapanScreen();
+    }
+
+    @OnClick (R.id.main_ll_japan)
+    void onMainLlJapanClick() {
+        mPresenter.showJapanScreen();
+    }
+
+    @OnClick (R.id.textview_main_japan)
+    void onMainTvJapanClick() {
+        mPresenter.showJapanScreen();
+    }
+
     @Override
     public void showChinaScreen() {
         ChinaActivity.start(this);
@@ -135,6 +151,11 @@ public class MainActivity extends BaseActivity implements MainView{
     @Override
     public void showZodiakScreen() {
         ZodiakActivity.start(this);
+    }
+
+    @Override
+    public void showJapanScreen() {
+        JapanActivity.start(this);
     }
 
 

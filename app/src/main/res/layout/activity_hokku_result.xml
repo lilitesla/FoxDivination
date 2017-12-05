@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.japan.hokku.result.view.HokkuResultActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle">
+
+        <ImageButton
+            android:id="@+id/button_hokku_result_close"
+            style="@style/buttonCloseStyle"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_hokku_result"
+            android:layout_below="@id/button_hokku_result_close"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_hokku_result"
+                android:background="@drawable/hokku"
+                style="@style/mainImageStyle" />
+
+            <TextView
+                android:id="@+id/textview_hokku_result"
+                android:text="Хокку\nхокку\nхокку"
+                style="@style/MainCaptionStyle"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textview_hokku_result_author"
+                android:text="Басе"
+                style="@style/MainDescriptionStyle"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/textview_hokku_result_interp"
+                android:text="@string/interpretation"
+                style="@style/MainCaptionStyle" />
+
+            <TextView
+                android:id="@+id/textview_hokku_result_description"
+                android:text="Бла Бла Бла"
+                style="@style/MainDescriptionStyle"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_hokku_result_back"
+            style="@style/buttonBackStyle" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

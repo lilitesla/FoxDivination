@@ -19,4 +19,6 @@ public class ChinaPresenter extends BasePresenter<ChinaView> {
 
     public void showDominoScreen() { mView.showDominoScreen(); }
 
+    public void showMadjongScreen() { mView.showMadjongScreen(); }
+
 }

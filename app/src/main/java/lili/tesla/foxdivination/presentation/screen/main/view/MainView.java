@@ -10,4 +10,5 @@ public interface MainView {
     void showJewishScreen();
     void showAfricaScreen();
     void showZodiakScreen();
+    void showJapanScreen();
 }

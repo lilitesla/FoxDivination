@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.japan.mokuso.result.view.MokusoResultActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/button_mokuso_result_close"
+            style="@style/buttonCloseStyle" />
+
+        <LinearLayout
+            android:id="@+id/ll_mokuso_result"
+            android:layout_below="@id/button_mokuso_result_close"
+            style="@style/LinearLayoutResultStyle">
+
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/image_mokuso_result_line_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@drawable/fatebook_solid_line"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <ImageView
+                    android:id="@+id/image_mokuso_result_line_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@drawable/fatebook_solid_line"
+                    android:layout_marginBottom="5dp"/>
+
+                <ImageView
+                    android:id="@+id/image_mokuso_result_line_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@drawable/fatebook_solid_line"
+                    android:layout_marginBottom="5dp"/>
+
+                <ImageView
+                    android:id="@+id/image_mokuso_result_line_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@drawable/fatebook_solid_line"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_mokuso_result_description"
+                android:text="результаты\nрезультаты\n"
+                style="@style/MainDescriptionStyle"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_mokuso_result_back"
+            style="@style/buttonBackStyle" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

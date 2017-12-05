@@ -13,6 +13,7 @@ import java.util.Map;
 
 import lili.tesla.foxdivination.data.Coffee;
 import lili.tesla.foxdivination.data.Ekaterina;
+import lili.tesla.foxdivination.data.Hokku;
 import lili.tesla.foxdivination.data.Prediction;
 import lili.tesla.foxdivination.data.Zodiac;
 import lili.tesla.foxdivination.data.ZodiacCompatibility;
@@ -236,5 +237,43 @@ public class DataBaseAccess {
 
         return result;
     }
+
+    //Hokku
+    public Hokku getHokku(int hokkuId) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = hokkuId + "";
+
+        Cursor cursor = database.rawQuery("SELECT hokku, author, interpretation  FROM hokku WHERE id = ?", str);
+        cursor.moveToFirst();
+
+        Hokku result = new Hokku(cursor.getString(0), cursor.getString(1), cursor.getString(2));
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+    //Mokuso
+    public String getMokuso(String indexId) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = indexId;
+
+        Cursor cursor = database.rawQuery("SELECT description  FROM mokuso WHERE indexId = ?", str);
+        cursor.moveToFirst();
+
+        String result = cursor.getString(0);
+        cursor.close();
+        close();
+
+        return result;
+
+    }
+
+
+
 
 }

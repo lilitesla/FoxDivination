@@ -151,12 +151,27 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="130dp"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:background="@drawable/ekaterina_sultan"
-                style="@style/imageMainButtonStyle"/>
+            <LinearLayout
+                android:id="@+id/main_ll_japan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_japan"
+                    android:background="@drawable/japanese"
+                    style="@style/imageMainButtonStyle"/>
+                <TextView
+                    android:id="@+id/textview_main_japan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/japan_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
             <ImageButton
                 android:background="@drawable/ekaterina_ship"

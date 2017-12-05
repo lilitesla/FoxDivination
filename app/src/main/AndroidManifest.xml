@@ -35,17 +35,20 @@
         <activity android:name=".presentation.screen.africa.coffee.result.view.CoffeeResultActivity" />
         <activity android:name=".presentation.screen.africa.coffee.main.view.CoffeeMainActivity" />
         <activity android:name=".presentation.screen.zodiak.main.view.ZodiakActivity" />
-        <activity android:name=".presentation.screen.zodiak.chooseZodiak.view.ChooseZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.chooseGender.view.ChooseGenderZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.mainZodiak.view.MainZodiakActivity" />
-        <activity android:name=".presentation.screen.zodiak.loveZodiak.view.LoveZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.compatibility.main.view.MainCompatibilityZodiakActivity" />
         <activity android:name=".presentation.screen.zodiak.compatibility.result.view.ResultCompatibilityZodiakActivity" />
         <activity android:name=".presentation.screen.africa.fa.result.view.FaResultActivity" />
         <activity android:name=".presentation.screen.africa.fa.main.view.FaMainActivity" />
         <activity android:name=".presentation.screen.africa.spider.main.view.SpiderMainActivity" />
         <activity android:name=".presentation.screen.africa.spider.result.view.SpiderResultActivity" />
-        <activity android:name=".presentation.screen.africa.spider.divination.view.SpiderDivinationActivity"></activity>
+        <activity android:name=".presentation.screen.africa.spider.divination.view.SpiderDivinationActivity" />
+        <activity android:name=".presentation.screen.japan.main.view.JapanActivity" />
+        <activity android:name=".presentation.screen.japan.mokuso.main.view.MokusoMainActivity" />
+        <activity android:name=".presentation.screen.japan.hokku.main.view.HokkuMainActivity" />
+        <activity android:name=".presentation.screen.japan.mokuso.result.view.MokusoResultActivity" />
+        <activity android:name=".presentation.screen.japan.hokku.result.view.HokkuResultActivity"></activity>
     </application>
 
 </manifest>

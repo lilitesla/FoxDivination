@@ -4,16 +4,15 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.graphics.Region;
-import android.util.ArrayMap;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import lili.tesla.foxdivination.data.Coffee;
 import lili.tesla.foxdivination.data.Ekaterina;
 import lili.tesla.foxdivination.data.Hokku;
+import lili.tesla.foxdivination.data.Mo;
+import lili.tesla.foxdivination.data.MoRosary;
 import lili.tesla.foxdivination.data.Prediction;
 import lili.tesla.foxdivination.data.Zodiac;
 import lili.tesla.foxdivination.data.ZodiacCompatibility;
@@ -272,6 +271,50 @@ public class DataBaseAccess {
         return result;
 
     }
+
+    //MoRosary
+    public MoRosary getMoRosary(String indexId) {
+        open();
+
+        String[] str = new String[1];
+        str[0] = indexId;
+
+        Cursor cursor = database.rawQuery("SELECT answer1, answer2, answer3, answer4, answer5, answer6 FROM mo_rosary WHERE indexId = ?", str);
+        cursor.moveToFirst();
+
+        MoRosary result = new MoRosary(indexId, new String[]{cursor.getString(0), cursor.getString(1), cursor.getString(2),
+                cursor.getString(3), cursor.getString(4), cursor.getString(5)});
+
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+    //Mo
+    public Mo getMo(String first, String second) {
+        open();
+
+        String[] str = new String[2];
+        str[0] = first;
+        str[1] = second;
+
+        Cursor cursor = database.rawQuery("SELECT caption, description, tasks, family, things, private_life, friends, enemyes, rest, health, self_improvement, business " +
+                " FROM mo WHERE first = ? and second = ?", str);
+        cursor.moveToFirst();
+
+        Mo result = new Mo(first, second, cursor.getString(0), cursor.getString(1), cursor.getString(2),
+                cursor.getString(3), cursor.getString(4), cursor.getString(5),
+                cursor.getString(6), cursor.getString(7), cursor.getString(8),
+                cursor.getString(9), cursor.getString(10), cursor.getString(11));
+
+        cursor.close();
+        close();
+
+        return result;
+    }
+
+
 
 
 

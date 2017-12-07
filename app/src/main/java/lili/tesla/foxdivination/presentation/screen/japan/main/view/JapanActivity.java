@@ -58,7 +58,7 @@ public class JapanActivity extends BaseActivity implements JapanView {
         Utils.setTypefaceLite(mTvHokku);
     }
 
-    @OnClick (R.id.button_hokku_back)
+    @OnClick (R.id.button_japan_back)
     void onBackClick() {
         finish();
     }

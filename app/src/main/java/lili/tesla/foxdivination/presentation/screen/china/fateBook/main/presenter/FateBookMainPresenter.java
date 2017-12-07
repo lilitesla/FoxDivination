@@ -9,10 +9,6 @@ import lili.tesla.foxdivination.presentation.screen.china.fateBook.main.view.Fat
 
 public class FateBookMainPresenter extends BasePresenter<FateBookMainView> {
 
-    public void showChinaScreen() {
-        mView.showChinaScreen();
-    }
-
     public void showFateBookDivination() {
         mView.showFateBookDivination();
     }

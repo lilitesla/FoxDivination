@@ -2,28 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/linearLayoutMainStyle"
-    tools:context="lili.tesla.foxdivination.presentation.screen.japan.main.view.JapanActivity">
+    tools:context="lili.tesla.foxdivination.presentation.screen.tibet.main.view.TibetActivity">
 
     <ScrollView
         style="@style/ScrollViewStyle">
 
         <LinearLayout
-            android:id="@+id/ll_japan"
+            android:id="@+id/ll_tibet"
             style="@style/MainLinearLayoutStyle">
 
             <ImageView
-                android:id="@+id/image_japan"
-                android:background="@drawable/japanese"
+                android:id="@+id/image_tibet"
+                android:background="@drawable/tibet"
                 style="@style/mainImageStyle"/>
 
             <TextView
-                android:id="@+id/textview_japan_caption"
-                android:text="@string/japan_caption"
+                android:id="@+id/textview_tibet_caption"
+                android:text="@string/tibet_caption"
                 style="@style/MainCaptionStyle"/>
 
             <TextView
-                android:id="@+id/textview_japan_description"
-                android:text="@string/japan_description"
+                android:id="@+id/textview_tibet_description"
+                android:text="@string/tibet_description"
                 style="@style/MainDescriptionStyle"/>
 
             <LinearLayout
@@ -31,41 +31,41 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:id="@+id/main_ll_mokuso"
+                    android:id="@+id/main_ll_mo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <Button
-                        android:id="@+id/main_button_mokuso"
+                        android:id="@+id/main_button_mo"
                         style="@style/imageButtonStyle"
                         android:layout_gravity="center"
-                        android:background="@drawable/mokuso"/>
+                        android:background="@drawable/mo"/>
                     <TextView
-                        android:id="@+id/textview_main_mokuso"
+                        android:id="@+id/textview_main_mo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/mokuso_caption"
+                        android:text="@string/mo_caption"
                         android:textSize="11sp"
                         android:gravity="center"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/main_ll_hokku"
+                    android:id="@+id/main_ll_mo_rosary"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <Button
-                        android:id="@+id/main_button_hokku"
+                        android:id="@+id/main_button_mo_rosary"
                         style="@style/imageButtonStyle"
                         android:layout_gravity="center"
-                        android:background="@drawable/hokku"/>
+                        android:background="@drawable/mo_rosary"/>
                     <TextView
-                        android:id="@+id/textview_main_hokku"
+                        android:id="@+id/textview_main_mo_rosary"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/hokku_caption"
+                        android:text="@string/mo_rosary_caption"
                         android:textSize="11sp"
                         android:gravity="center"/>
                 </LinearLayout>
@@ -73,7 +73,7 @@
             </LinearLayout>
 
             <ImageButton
-                android:id="@+id/button_japan_back"
+                android:id="@+id/button_tibet_back"
                 style="@style/buttonBackStyle" />
 
         </LinearLayout>

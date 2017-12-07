@@ -48,7 +48,13 @@
         <activity android:name=".presentation.screen.japan.mokuso.main.view.MokusoMainActivity" />
         <activity android:name=".presentation.screen.japan.hokku.main.view.HokkuMainActivity" />
         <activity android:name=".presentation.screen.japan.mokuso.result.view.MokusoResultActivity" />
-        <activity android:name=".presentation.screen.japan.hokku.result.view.HokkuResultActivity"></activity>
+        <activity android:name=".presentation.screen.japan.hokku.result.view.HokkuResultActivity" />
+        <activity android:name=".presentation.screen.tibet.main.view.TibetActivity" />
+        <activity android:name=".presentation.screen.tibet.mo.main.view.MoMainActivity" />
+        <activity android:name=".presentation.screen.tibet.mo_rosary.main.view.MoRosaryMainActivity" />
+        <activity android:name=".presentation.screen.tibet.mo.result.view.MoResultActivity" />
+        <activity android:name=".presentation.screen.tibet.mo_rosary.result.view.MoRosaryResultActivity" />
+        <activity android:name=".presentation.screen.tibet.mo_rosary.divination.view.MoRosaryDivinationActivity"></activity>
     </application>
 
 </manifest>

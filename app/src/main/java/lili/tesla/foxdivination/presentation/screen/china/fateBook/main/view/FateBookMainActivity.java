@@ -54,18 +54,12 @@ public class FateBookMainActivity extends BaseActivity implements FateBookMainVi
 
     @OnClick (R.id.button_fatebook_main_back)
     void onBackClick() {
-        mPresenter.showChinaScreen();
+        finish();
     }
 
     @OnClick (R.id.button_fatebook_main_start)
     void onButtonFateBookMainStart() {
         mPresenter.showFateBookDivination();
-    }
-
-    @Override
-    public void showChinaScreen() {
-        ChinaActivity.start(this);
-        finish();
     }
 
     @Override

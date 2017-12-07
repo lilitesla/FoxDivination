@@ -173,9 +173,24 @@
                     android:gravity="center"/>
             </LinearLayout>
 
-            <ImageButton
-                android:background="@drawable/ekaterina_ship"
-                style="@style/imageMainButtonStyle"/>
+            <LinearLayout
+                android:id="@+id/main_ll_tibet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/main_button_tibet"
+                    android:background="@drawable/tibet"
+                    style="@style/imageMainButtonStyle"/>
+                <TextView
+                    android:id="@+id/textview_main_tibet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tibet_caption"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
             <ImageButton
                 android:background="@drawable/ekaterina_candles"

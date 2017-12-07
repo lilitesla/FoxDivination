@@ -11,4 +11,6 @@ public interface MainView {
     void showAfricaScreen();
     void showZodiakScreen();
     void showJapanScreen();
+    void showTibetScreen();
+
 }

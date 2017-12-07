@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.tibet.mo.result.view.MoResultActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle">
+
+        <RelativeLayout
+            style="@style/ScrollViewStyle">
+
+            <ImageButton
+                android:id="@+id/button_mo_result_close"
+                style="@style/buttonCloseStyle"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_mo_result"
+                android:layout_below="@id/button_mo_result_close"
+                style="@style/MainLinearLayoutStyle">
+
+                <LinearLayout
+                    style="@style/LinLayImageButtonsStyle"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textview_mo_result_1"
+                        android:text="ДХИ"
+                        android:gravity="center"
+                        android:textSize="34sp"
+                        android:textColor="@color/brown_dark"
+                        style="@style/imageButtonStyle"/>
+
+                    <TextView
+                        android:id="@+id/textview_mo_result_2"
+                        android:text="ДХИ"
+                        android:gravity="center"
+                        android:textSize="34sp"
+                        android:textColor="@color/brown_dark"
+                        style="@style/imageButtonStyle"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_caption"
+                    android:text="Заголовок"
+                    style="@style/MainCaptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_description"
+                    android:text="Описание"
+                    android:layout_gravity="center"
+                    style="@style/MainDescriptionStyle"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_tasks_caption"
+                    android:text="@string/mo_tasks"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_tasks_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_family_caption"
+                    android:text="@string/mo_family"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_family_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_things_caption"
+                    android:text="@string/mo_things"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_things_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_private_life_caption"
+                    android:text="@string/mo_private_life"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_private_life_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_friends_caption"
+                    android:text="@string/mo_friends"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_friends_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_enemyes_caption"
+                    android:text="@string/mo_enemyes"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_enemyes_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_rest_caption"
+                    android:text="@string/mo_rest"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_rest_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_health_caption"
+                    android:text="@string/mo_health"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_health_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_self_improvement_caption"
+                    android:text="@string/mo_self_improvement"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_self_improvement_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textview_mo_result_business_caption"
+                    android:text="@string/mo_business"
+                    style="@style/MainCaptionStyle" />
+
+                <TextView
+                    android:id="@+id/textview_mo_result_business_description"
+                    android:text="Бла Бла Бла"
+                    style="@style/MainDescriptionStyle"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/button_mo_result_back"
+                    style="@style/buttonBackStyle" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

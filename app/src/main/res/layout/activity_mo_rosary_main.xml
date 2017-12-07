@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.tibet.mo_rosary.main.view.MoRosaryMainActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle">
+
+        <LinearLayout
+            android:id="@+id/ll_mo_rosary_main"
+            style="@style/MainLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_mo_rosary_main"
+                android:background="@drawable/mo_rosary"
+                style="@style/mainImageStyle"/>
+
+            <TextView
+                android:id="@+id/textview_mo_rosary_main_caption"
+                android:text="@string/mo_rosary_caption"
+                style="@style/MainCaptionStyle"/>
+
+            <TextView
+                android:id="@+id/textview_mo_rosary_main_description"
+                android:text="@string/mo_rosary_description"
+                style="@style/MainDescriptionStyle"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_mo_rosary_main_start"
+            android:text="@string/button_start"
+            android:layout_above="@+id/button_mo_rosary_main_back"
+            android:layout_centerHorizontal="true"
+            style="@style/showResultButtonStyle"/>
+
+
+        <ImageButton
+            android:id="@+id/button_mo_rosary_main_back"
+            style="@style/buttonBackStyle" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -6,7 +6,6 @@ package lili.tesla.foxdivination.presentation.screen.china.fateBook.main.view;
 
 public interface FateBookMainView {
 
-    void showChinaScreen();
     void showFateBookDivination();
 
 }

@@ -25,4 +25,5 @@ public class MainPresenter extends BasePresenter<MainView> {
         mView.showJapanScreen();
     }
 
+    public void showTibetScreen() { mView.showTibetScreen(); }
 }

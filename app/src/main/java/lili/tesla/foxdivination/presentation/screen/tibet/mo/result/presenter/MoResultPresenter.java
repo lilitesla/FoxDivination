@@ -1,5 +1,7 @@
 package lili.tesla.foxdivination.presentation.screen.tibet.mo.result.presenter;
 
+import java.util.Random;
+
 import lili.tesla.foxdivination.data.Mo;
 import lili.tesla.foxdivination.presentation.application.App;
 import lili.tesla.foxdivination.presentation.screen.base.BasePresenter;
@@ -11,6 +13,8 @@ import lili.tesla.foxdivination.presentation.screen.tibet.mo.result.view.MoResul
 
 public class MoResultPresenter extends BasePresenter<MoResultView> {
 
+    private static final Random random = new Random();
+
     private String[] slogs = new String[] {"АХ", "РА", "ПА", "НА", "ЦА", "ДХИ"};
 
     public void showMainScreen() {
@@ -19,9 +23,9 @@ public class MoResultPresenter extends BasePresenter<MoResultView> {
 
     public void showResult() {
 
-        int randNum = 0;      // TODO: 07.12.2017 сделать нормальное получение рандомного числа
+        int randNum = random.nextInt(6);
         String first = slogs[randNum];
-        randNum = 0;     // TODO: 07.12.2017 сделать нормальное получение рандомного числа
+        randNum = random.nextInt(6);
         String second = slogs[randNum];
         Mo mo = App.dataBaseAccess.getMo(first, second);
 

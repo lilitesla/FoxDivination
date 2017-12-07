@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayoutMainStyle"
+    tools:context="lili.tesla.foxdivination.presentation.screen.tibet.mo_rosary.result.view.MoRosaryResultActivity">
+
+    <RelativeLayout
+        style="@style/ScrollViewStyle">
+
+        <ImageButton
+            android:id="@+id/button_mo_rosary_result_close"
+            style="@style/buttonCloseStyle"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_mo_rosary_result_result"
+            android:layout_below="@id/button_mo_rosary_result_close"
+            style="@style/LinearLayoutResultStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/fatebook_solid_line"
+                    />
+                <LinearLayout
+                    style="@style/LinLayImageButtonsStyle"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/image_mo_rosary_result_1"
+                        style="@style/imageButtonStyle"
+                        android:background="@drawable/fatebook_in"/>
+
+                    <ImageView
+                        android:id="@+id/image_mo_rosary_result_2"
+                        style="@style/imageButtonStyle"
+                        android:background="@drawable/fatebook_in"/>
+
+                    <ImageView
+                        android:id="@+id/image_mo_rosary_result_3"
+                        style="@style/imageButtonStyle"
+                        android:background="@drawable/fatebook_in"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textview_mo_rosary_result_caption"
+                android:text="название"
+                android:layout_marginTop="20dp"
+                style="@style/MainCaptionStyle"/>
+
+            <TextView
+                android:id="@+id/textview_mo_rosary_result_description"
+                android:text="результаты"
+                style="@style/MainDescriptionStyle"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_mo_rosary_result_back"
+            style="@style/buttonBackStyle" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

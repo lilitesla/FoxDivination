@@ -18,6 +18,7 @@ import lili.tesla.foxdivination.presentation.screen.ekaterina.main.view.Ekaterin
 import lili.tesla.foxdivination.presentation.screen.japan.main.view.JapanActivity;
 import lili.tesla.foxdivination.presentation.screen.jewish.mainJewish.view.JewishActivity;
 import lili.tesla.foxdivination.presentation.screen.main.presenter.MainPresenter;
+import lili.tesla.foxdivination.presentation.screen.tibet.main.view.TibetActivity;
 import lili.tesla.foxdivination.presentation.screen.zodiak.main.view.ZodiakActivity;
 import lili.tesla.foxdivination.presentation.util.Utils;
 
@@ -42,6 +43,17 @@ public class MainActivity extends BaseActivity implements MainView{
     @BindView(R.id.textview_main_jewish)
     TextView mTextViewMainJewish;
 
+    @BindView(R.id.textview_main_africa)
+    TextView mTextViewMainAfrica;
+
+    @BindView(R.id.textview_main_zodiak)
+    TextView mTextViewMainZodiak;
+
+    @BindView(R.id.textview_main_japan)
+    TextView mTextViewMainJapan;
+
+    @BindView(R.id.textview_main_tibet)
+    TextView mTextViewMainTibet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +68,10 @@ public class MainActivity extends BaseActivity implements MainView{
         Utils.setTypefaceLite(mTextViewMainChina);
         Utils.setTypefaceLite(mTextViewMainEkaterina);
         Utils.setTypefaceLite(mTextViewMainJewish);
+        Utils.setTypefaceLite(mTextViewMainAfrica);
+        Utils.setTypefaceLite(mTextViewMainZodiak);
+        Utils.setTypefaceLite(mTextViewMainJapan);
+        Utils.setTypefaceLite(mTextViewMainTibet);
     }
 
     @OnClick (R.id.main_button_china)
@@ -128,6 +144,22 @@ public class MainActivity extends BaseActivity implements MainView{
         mPresenter.showJapanScreen();
     }
 
+    @OnClick (R.id.main_button_tibet)
+    void onMainButtonTibetClick() {
+        mPresenter.showTibetScreen();
+    }
+
+    @OnClick (R.id.main_ll_tibet)
+    void onMainLlTibetClick() {
+        mPresenter.showTibetScreen();
+    }
+
+    @OnClick (R.id.textview_main_tibet)
+    void onMainTvTibetClick() {
+        mPresenter.showTibetScreen();
+    }
+
+
     @Override
     public void showChinaScreen() {
         ChinaActivity.start(this);
@@ -156,6 +188,11 @@ public class MainActivity extends BaseActivity implements MainView{
     @Override
     public void showJapanScreen() {
         JapanActivity.start(this);
+    }
+
+    @Override
+    public void showTibetScreen() {
+        TibetActivity.start(this);
     }
 
 
